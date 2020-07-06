@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: fundoParede
+    uniqueID: 1652097171
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: plataformas
+    uniqueID: 1422127871
     locked: 0
