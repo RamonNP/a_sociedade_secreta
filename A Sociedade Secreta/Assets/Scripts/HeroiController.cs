@@ -5,12 +5,14 @@ using UnityEngine;
 public class HeroiController : MonoBehaviour
 {
 
+    //sistemas de armas
+    public GameObject[] armas;
 
-    private Animator playerAnimator;
+    private Animator playerAnimator; 
     public Rigidbody2D playerRb;
 
     public bool grounded;
-    public bool attacking;
+    public bool attacking; 
     public int idAnimation;
     public Transform groundCheck; //Responsavel por checar se o personagem esta no xao
     public bool lookLeft;
@@ -20,10 +22,17 @@ public class HeroiController : MonoBehaviour
     private float h, v;
 
     public Collider2D standing, crounching;
+    private Vector3 dir = Vector3.right;
+    public GameObject hands;
+    public GameObject interacao; 
 
     // Start is called before the first frame update
     void Start()
     {
+        foreach (var item in armas)
+        {
+           item.SetActive(false);
+        }
         playerAnimator = GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody2D>();
     }
@@ -32,6 +41,7 @@ public class HeroiController : MonoBehaviour
     {
         grounded = Physics2D.OverlapCircle(groundCheck.position, 0.02f);
         playerRb.velocity = new Vector2(h * speed, playerRb.velocity.y);
+        interagir();
     }
 
     // Update is called once per frame
@@ -69,7 +79,12 @@ public class HeroiController : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1") && v>=0 && !attacking)
         {
-            playerAnimator.SetTrigger("atacar");
+            if(interacao == null){
+                playerAnimator.SetTrigger("atacar");
+            } else if(interacao != null) {
+                interacao.SendMessage("interacao",SendMessageOptions.DontRequireReceiver);
+            }
+            //interacao.SendMessage("interacao",SendMessageOptions.DontRequireReceiver);
         }
         if (Input.GetButtonDown("Jump") && grounded && !attacking)
         {
@@ -113,6 +128,8 @@ public class HeroiController : MonoBehaviour
             float x = transform.localScale.x;
             x *= -1;
             transform.localScale = new Vector3(x,transform.localScale.y,transform.localScale.z);
+            dir.x = x;
+            //dir = dir;
         }
     }
 
@@ -121,9 +138,46 @@ public class HeroiController : MonoBehaviour
         if(atk==0 )
         {
             attacking = false;
+            armas[armas.Length-1].SetActive(false);
         }else if (atk == 1)
         {
             attacking = true;
         }
+    }
+
+    private void interagir()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(hands.transform.position, dir, 5f);
+        Debug.DrawRay(hands.transform.position, dir * 5f, Color.black);
+    }
+
+
+    /// <summary>
+    /// Sent when an incoming collider makes contact with this object's
+    /// collider (2D physics only).
+    /// </summary>
+    /// <param name="other">The Collision2D data associated with this collision.</param>
+    void OnCollisionEnter2D(Collision2D other)
+    {
+//        Debug.Log(other.gameObject.name +other.gameObject.tag);
+        if(other.gameObject.tag == "Bau")
+        {
+            interacao = other.gameObject;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision) {
+        //Debug.Log(collision.gameObject.name+collision.gameObject.tag);
+        if(collision.gameObject.tag == "Bau")
+        {
+            interacao = null;
+        }
+    }
+    void controleArma(int id){
+        //Debug.Log("controleArma"+id);
+        foreach (var item in armas)
+        {
+           item.SetActive(false);
+        }
+        armas[id].SetActive(true);
     }
 }

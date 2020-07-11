@@ -21,33 +21,33 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 29201af7ae6926544a74aa0ff659ec06, type: 3}
-    - time: 0.033333335
+    - time: 0.028571429
       value: {fileID: 21300000, guid: 8f05e2ffa345df34da5a92196125b7f2, type: 3}
-    - time: 0.06666667
+    - time: 0.057142857
       value: {fileID: 21300000, guid: f5a92d51268973946afaafdebf137cbf, type: 3}
-    - time: 0.1
+    - time: 0.08571429
       value: {fileID: 21300000, guid: 4c9e74a6f914c034d921624507e9f116, type: 3}
-    - time: 0.13333334
+    - time: 0.114285715
       value: {fileID: 21300000, guid: c0eaf715e3a87634e8675f97ed667181, type: 3}
-    - time: 0.16666667
+    - time: 0.14285715
       value: {fileID: 21300000, guid: 633211558a31e7e4f8c69b7ac77c22c3, type: 3}
-    - time: 0.2
+    - time: 0.17142858
       value: {fileID: 21300000, guid: 8ab08c4f3cf5efb4e9e98bbaefe342dd, type: 3}
-    - time: 0.23333333
+    - time: 0.2
       value: {fileID: 21300000, guid: 8f54b8f3b2939264fbe931662231b632, type: 3}
-    - time: 0.26666668
+    - time: 0.22857143
       value: {fileID: 21300000, guid: b37a5bc5031082a42abec4ddda1b0b2f, type: 3}
-    - time: 0.3
+    - time: 0.25714287
       value: {fileID: 21300000, guid: bf1b5927ea65aae42bbd3de1373046c6, type: 3}
-    - time: 0.33333334
+    - time: 0.2857143
       value: {fileID: 21300000, guid: 68358160a7cfcda418b38ffb1840859c, type: 3}
-    - time: 0.36666667
+    - time: 0.31428573
       value: {fileID: 21300000, guid: d4db1b3a6b697f04892e890b809e7c3a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 30
+  m_SampleRate: 35
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -79,7 +79,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4
+    m_StopTime: 0.34285715
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -106,7 +106,28 @@ AnimationClip:
     floatParameter: 0
     intParameter: 1
     messageOptions: 0
-  - time: 0.36666667
+  - time: 0.22857143
+    functionName: controleArma
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.25714287
+    functionName: controleArma
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 1
+    messageOptions: 0
+  - time: 0.2857143
+    functionName: controleArma
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 2
+    messageOptions: 0
+  - time: 0.31428573
     functionName: atack
     data: 
     objectReferenceParameter: {fileID: 0}
