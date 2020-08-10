@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ArmaInfo : MonoBehaviour
 {
-    public float dano;
+    public float danoMax;
+    public float danoMin;
     public int tipoDanoTomado;
 
     // Start is called before the first frame update

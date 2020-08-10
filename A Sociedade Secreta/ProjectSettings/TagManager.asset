@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Bau
   - Arma
+  - Coletavel
+  - Interacao
+  - Porta
   layers:
   - Default
   - TransparentFX
@@ -18,8 +21,8 @@ TagManager:
   - ground
   - interacao
   - inimigo
-  - 
-  - 
+  - hud
+  - coletavel
   - 
   - 
   - 
@@ -46,6 +49,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: PAREDE
+    uniqueID: 3539163257
+    locked: 0
+  - name: Personagem
+    uniqueID: 1109590075
+    locked: 0
   - name: plataformas
     uniqueID: 1422127871
+    locked: 0
+  - name: HUD
+    uniqueID: 3613148765
     locked: 0

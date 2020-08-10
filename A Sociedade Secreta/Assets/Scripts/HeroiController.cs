@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class HeroiController : MonoBehaviour
 {
-
+    private GameControler gameControler;
     //sistemas de armas
     public GameObject[] armas;
+
+    public int vidaMaxima;
+    public int vidaAtual;
 
     private Animator playerAnimator; 
     public Rigidbody2D playerRb;
@@ -19,6 +22,7 @@ public class HeroiController : MonoBehaviour
     public float speed;
     public float jumpForce;
 
+    public GameObject balaoAlerta;
     private float h, v;
 
     public Collider2D standing, crounching;
@@ -29,12 +33,14 @@ public class HeroiController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        balaoAlerta.SetActive(false);
         foreach (var item in armas)
         {
            item.SetActive(false);
         }
         playerAnimator = GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody2D>();
+        gameControler = FindObjectOfType(typeof(GameControler)) as GameControler;
     }
 
     private void FixedUpdate()
@@ -82,13 +88,16 @@ public class HeroiController : MonoBehaviour
             if(interacao == null){
                 playerAnimator.SetTrigger("atacar");
             } else if(interacao != null) {
+                if(interacao.tag.Equals("Porta")){
+                    interacao.GetComponent<Porta>().tPlayer = this.transform;
+                }
                 interacao.SendMessage("interacao",SendMessageOptions.DontRequireReceiver);
             }
             //interacao.SendMessage("interacao",SendMessageOptions.DontRequireReceiver);
         }
         if (Input.GetButtonDown("Jump") && grounded && !attacking)
         {
-            Debug.Log(jumpForce);
+//            Debug.Log(jumpForce);
             playerRb.AddForce(new Vector2(0, jumpForce));
             //playerAnimator.SetTrigger("atacar");
         }
@@ -150,7 +159,55 @@ public class HeroiController : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(hands.transform.position, dir, 5f);
         Debug.DrawRay(hands.transform.position, dir * 5f, Color.black);
     }
-
+/// <summary>
+/// Sent when another object enters a trigger collider attached to this
+/// object (2D physics only).
+/// </summary>
+/// <param name="other">The other Collider2D involved in this collision.</param>
+void OnTriggerEnter2D(Collider2D other)
+{
+    Debug.Log(other.gameObject.tag);
+    switch (other.gameObject.tag)
+        {
+            case "Bau":
+                interacao = other.gameObject;
+                Bau bau = other.gameObject.GetComponent<Bau>();
+                //if(!bau.open){
+                    balaoAlerta.SetActive(true);
+                //}
+            break;
+            case "Coletavel":
+                other.gameObject.SendMessage("coletar", SendMessageOptions.DontRequireReceiver);
+            break;
+            case "Porta":
+                interacao = other.gameObject;
+                balaoAlerta.SetActive(true);
+            break;
+            default:
+            break;
+        }
+}
+private void OnTriggerExit2D(Collider2D other) {
+     switch (other.gameObject.tag)
+        {
+            case "Bau":
+                //interacao = other.gameObject;
+               // Bau bau = other.gameObject.GetComponent<Bau>();
+                //if(!bau.open){
+                    //balaoAlerta.SetActive(true);
+                //}
+            break;
+            case "Coletavel":
+                //other.gameObject.SendMessage("coletar", SendMessageOptions.DontRequireReceiver);
+            break;
+            case "Porta":
+                interacao = null;
+                balaoAlerta.SetActive(false);
+            break;
+            default:
+            break;
+        }
+}
 
     /// <summary>
     /// Sent when an incoming collider makes contact with this object's
@@ -160,9 +217,24 @@ public class HeroiController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
 //        Debug.Log(other.gameObject.name +other.gameObject.tag);
-        if(other.gameObject.tag == "Bau")
+
+        switch (other.gameObject.tag)
         {
-            interacao = other.gameObject;
+            case "Bau":
+                interacao = other.gameObject;
+                Bau bau = other.gameObject.GetComponent<Bau>();
+               // if(!bau.open){
+                    balaoAlerta.SetActive(true);
+               // }
+            break;
+            case "Coletavel":
+                Destroy(other.gameObject);
+            break;
+            case "Interacao":
+                balaoAlerta.SetActive(true);
+            break;
+            default:
+            break;
         }
     }
     private void OnCollisionExit2D(Collision2D collision) {
@@ -170,6 +242,11 @@ public class HeroiController : MonoBehaviour
         if(collision.gameObject.tag == "Bau")
         {
             interacao = null;
+            balaoAlerta.SetActive(false);
+        }
+        if(collision.gameObject.tag == "Interacao")
+        {
+            balaoAlerta.SetActive(false);
         }
     }
     void controleArma(int id){
