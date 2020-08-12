@@ -12,6 +12,7 @@ public class HeroiController : MonoBehaviour
     public int vidaAtual;
 
     private Animator playerAnimator; 
+    public GameObject objetoAnimatorBody;
     public Rigidbody2D playerRb;
 
     public bool grounded;
@@ -29,6 +30,9 @@ public class HeroiController : MonoBehaviour
     private Vector3 dir = Vector3.right;
     public GameObject hands;
     public GameObject interacao; 
+    [Header("Banco de Dados Arma")]
+    public int idArma, idArmaAtual;
+    public GameObject arma;
 
     // Start is called before the first frame update
     void Start()
@@ -38,9 +42,10 @@ public class HeroiController : MonoBehaviour
         {
            item.SetActive(false);
         }
-        playerAnimator = GetComponent<Animator>();
+        playerAnimator = objetoAnimatorBody.GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody2D>();
         gameControler = FindObjectOfType(typeof(GameControler)) as GameControler;
+        trocarArma(idArma);
     }
 
     private void FixedUpdate()
@@ -126,7 +131,7 @@ public class HeroiController : MonoBehaviour
 
         playerAnimator.SetBool("groundead",grounded);
         playerAnimator.SetInteger("idAnimation", idAnimation);
-        playerAnimator.SetFloat("speedY", playerRb.velocity.y);
+       // playerAnimator.SetFloat("speedY", playerRb.velocity.y);
     }
 
     void flip()
@@ -249,12 +254,21 @@ private void OnTriggerExit2D(Collider2D other) {
             balaoAlerta.SetActive(false);
         }
     }
-    void controleArma(int id){
+    public void controleArma(int id){
         //Debug.Log("controleArma"+id);
         foreach (var item in armas)
         {
            item.SetActive(false);
         }
         armas[id].SetActive(true);
+    }
+
+    //void private void LateUpdate() {
+        //if()
+    //}
+    public void trocarArma(int id) {
+        idArma = id;
+        arma.GetComponent<SpriteRenderer>().sprite = gameControler.Armas[id];
+        idArmaAtual = idArma;
     }
 }

@@ -88,6 +88,7 @@ public class InimigoControler : MonoBehaviour
         animator.SetBool("groundead", true);
     }
     private void OnTriggerEnter2D(Collider2D other) {
+        Debug.Log(other.gameObject.tag);
         if(died == true){return;}
         switch (other.gameObject.tag)
         {

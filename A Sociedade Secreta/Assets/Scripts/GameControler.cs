@@ -11,7 +11,8 @@ public class GameControler : MonoBehaviour
 
     public GameObject[] fxDano;
     public GameObject fxMorte;
-    
+    [Header("Banco de Dados Arma")]
+    public Sprite[] Armas;
     // Start is called before the first frame update
     void Start()
     {
