@@ -29,10 +29,21 @@ public class Porta : MonoBehaviour
         fade.fadeIn();
         yield return new WaitWhile(() => fade.fume.color.a < 0.9f);
         tPlayer.gameObject.SetActive(false);
+        Transform[] allChildren = tPlayer.gameObject.GetComponentsInChildren<Transform>(true);
+        Debug.Log(allChildren.Length);
         if(escuro){
-            tPlayer.gameObject.GetComponent<SpriteRenderer>().material = luz2D;
+            foreach ( Transform child in allChildren) {
+                if(child.GetComponent<SpriteRenderer>()){
+                    child.GetComponent<SpriteRenderer>().material = luz2D;
+                }
+            }
         } else {
-            tPlayer.gameObject.GetComponent<SpriteRenderer>().material = padrao2D;
+            foreach ( Transform child in allChildren) {
+                 if(child.GetComponent<SpriteRenderer>()){
+                    child.GetComponent<SpriteRenderer>().material = padrao2D;
+                }
+            }
+            //tPlayer.gameObject.GetComponent<SpriteRenderer>().material = padrao2D;
         }
 
         tPlayer.position = destino.position;

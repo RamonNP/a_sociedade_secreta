@@ -5,8 +5,7 @@ using UnityEngine;
 public class HeroiController : MonoBehaviour
 {
     private GameControler gameControler;
-    //sistemas de armas
-    public GameObject[] armas;
+    public GameObject trail;
 
     public int vidaMaxima;
     public int vidaAtual;
@@ -31,12 +30,15 @@ public class HeroiController : MonoBehaviour
     public GameObject hands;
     public GameObject interacao; 
     [Header("Banco de Dados Arma")]
+
+    public GameObject[] armas;
     public int idArma, idArmaAtual;
     public GameObject arma;
 
     // Start is called before the first frame update
     void Start()
     {
+        trail.SetActive(false);
         balaoAlerta.SetActive(false);
         foreach (var item in armas)
         {
@@ -58,6 +60,11 @@ public class HeroiController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(attacking){
+            trail.SetActive(true);
+        } else {
+            trail.SetActive(false);
+        }
         h = Input.GetAxisRaw("Horizontal");
         v = Input.GetAxisRaw("Vertical");
         
@@ -188,6 +195,10 @@ void OnTriggerEnter2D(Collider2D other)
                 interacao = other.gameObject;
                 balaoAlerta.SetActive(true);
             break;
+            case "Interacao":
+                interacao = null;
+                balaoAlerta.SetActive(false);
+            break;
             default:
             break;
         }
@@ -206,6 +217,10 @@ private void OnTriggerExit2D(Collider2D other) {
                 //other.gameObject.SendMessage("coletar", SendMessageOptions.DontRequireReceiver);
             break;
             case "Porta":
+                interacao = null;
+                balaoAlerta.SetActive(false);
+            break;
+            case "Interacao":
                 interacao = null;
                 balaoAlerta.SetActive(false);
             break;
@@ -237,6 +252,7 @@ private void OnTriggerExit2D(Collider2D other) {
             break;
             case "Interacao":
                 balaoAlerta.SetActive(true);
+                interacao = other.gameObject;
             break;
             default:
             break;
@@ -263,9 +279,11 @@ private void OnTriggerExit2D(Collider2D other) {
         armas[id].SetActive(true);
     }
 
-    //void private void LateUpdate() {
-        //if()
-    //}
+    void LateUpdate() {
+        if(idArma!=idArmaAtual){
+            trocarArma(idArma);
+        }
+    }
     public void trocarArma(int id) {
         idArma = id;
         arma.GetComponent<SpriteRenderer>().sprite = gameControler.Armas[id];
