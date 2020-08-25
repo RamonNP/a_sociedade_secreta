@@ -12,12 +12,17 @@ public class MovimentosAnimation : MonoBehaviour
     }
     public void atack(int atk)
     {
-//        Debug.Log("Atacando - "+atk);
+        //Debug.Log("Atacando - "+atk);
         playScript.atack(atk);
     }
     public void controleArma(int atk)
     {
 //        Debug.Log("Atacando - "+atk);
         playScript.controleArma(atk);
+    }
+     public void hut(int hurt)
+    {
+        Debug.Log("hurt - "+hurt);
+        playScript.hurt(hurt);
     }
 }

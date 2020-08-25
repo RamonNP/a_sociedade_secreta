@@ -23,7 +23,7 @@ TagManager:
   - inimigo
   - hud
   - coletavel
-  - 
+  - check
   - 
   - 
   - 
@@ -57,6 +57,9 @@ TagManager:
     locked: 0
   - name: plataformas
     uniqueID: 1422127871
+    locked: 0
+  - name: itens
+    uniqueID: 3011883391
     locked: 0
   - name: HUD
     uniqueID: 3613148765

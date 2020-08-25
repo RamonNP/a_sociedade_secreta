@@ -39,7 +39,7 @@ IEnumerator gerarLoot() {
 }
    private GameControler getGameControler(){
        if(gameControler == null){ 
-           gameControler = FindObjectOfType(typeof(GameControler)) as GameControler;
+           gameControler = GameControler.getInstance();
        }
        return gameControler;
    }

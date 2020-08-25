@@ -11,6 +11,14 @@ public class Fade : MonoBehaviour
     public float step;
     private bool emTrasicao;
 
+/// <summary>
+/// Start is called on the frame when a script is enabled just before
+/// any of the Update methods is called the first time.
+/// </summary>
+void Start()
+{
+    StartCoroutine("fadeO");
+}
     public void fadeIn(){
         if(!emTrasicao){
             painelFume.SetActive(true);
@@ -30,6 +38,7 @@ public class Fade : MonoBehaviour
         }
     }
     IEnumerator fadeO(){
+        yield return new WaitForSeconds(0.5f);
         for (float i = 0; i <= 1; i+=step)
         {
             fume.color = Color.Lerp(corTransicao[1], corTransicao[0], i);

@@ -9,7 +9,7 @@ public class Coin : MonoBehaviour
 
     void Start()
     {
-        gameControler = FindObjectOfType(typeof(GameControler)) as GameControler;
+        gameControler = GameControler.getInstance();
     }
     public void coletar() {
         gameControler.gold += valor;

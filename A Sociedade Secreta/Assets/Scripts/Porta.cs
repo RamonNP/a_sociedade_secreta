@@ -39,7 +39,7 @@ public class Porta : MonoBehaviour
             }
         } else {
             foreach ( Transform child in allChildren) {
-                 if(child.GetComponent<SpriteRenderer>()){
+                if(child.GetComponent<SpriteRenderer>()){
                     child.GetComponent<SpriteRenderer>().material = padrao2D;
                 }
             }
@@ -47,7 +47,7 @@ public class Porta : MonoBehaviour
         }
 
         tPlayer.position = destino.position;
-        yield return new WaitForSeconds(0.5f);
+        //yield return new WaitForSeconds(0.5f);
         tPlayer.gameObject.SetActive(true);
         fade.fadeOut();
     }

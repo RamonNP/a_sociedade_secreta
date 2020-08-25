@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class HeroiController : MonoBehaviour
 {
-    private GameControler gameControler;
+    private GameControler gameController;
     public GameObject trail;
 
-    public int vidaMaxima;
-    public int vidaAtual;
-
+    [Header("Animaçoes")]
     private Animator playerAnimator; 
-    public GameObject objetoAnimatorBody;
-    public Rigidbody2D playerRb;
-
     public bool grounded;
+    public LayerMask oQueEChao;
     public bool attacking; 
     public int idAnimation;
+    public GameObject objetoAnimatorBody;
+    public Rigidbody2D playerRb;
+    public Sprite[] olhos;
+    public GameObject olhoAtual;
+
+
     public Transform groundCheck; //Responsavel por checar se o personagem esta no xao
     public bool lookLeft;
     public float speed;
@@ -32,7 +34,7 @@ public class HeroiController : MonoBehaviour
     [Header("Banco de Dados Arma")]
 
     public GameObject[] armas;
-    public int idArma, idArmaAtual;
+
     public GameObject arma;
 
     // Start is called before the first frame update
@@ -46,13 +48,18 @@ public class HeroiController : MonoBehaviour
         }
         playerAnimator = objetoAnimatorBody.GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody2D>();
-        gameControler = FindObjectOfType(typeof(GameControler)) as GameControler;
-        trocarArma(idArma);
+        gameController = GameControler.getInstance();
+        trocarArma(gameController.idArma);
     }
 
     private void FixedUpdate()
     {
-        grounded = Physics2D.OverlapCircle(groundCheck.position, 0.02f);
+        // Cancela comandos se nao estiver no gameplay
+        if (gameController.estadoAtual != GameState.GAMEPLAY)
+        {
+            return;
+        }
+        grounded = Physics2D.OverlapCircle(groundCheck.position, 0.02f, oQueEChao);
         playerRb.velocity = new Vector2(h * speed, playerRb.velocity.y);
         interagir();
     }
@@ -60,7 +67,41 @@ public class HeroiController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(attacking){
+        // Cancela comandos se nao estiver no gameplay
+        if (gameController.estadoAtual != GameState.GAMEPLAY)
+        {
+            return;
+        }
+       movimentos();
+    }
+
+    void flip()
+    {
+        if (!attacking)
+        {
+            lookLeft = !lookLeft;
+            float x = transform.localScale.x;
+            x *= -1;
+            transform.localScale = new Vector3(x,transform.localScale.y,transform.localScale.z);
+            dir.x = x;
+            //dir = dir;
+        }
+    }
+
+    public void atack(int atk)
+    {
+        if(atk==0 )
+        {
+            attacking = false;
+            armas[armas.Length-1].SetActive(false);
+        }else if (atk == 1)
+        {
+            attacking = true;
+        }
+    }
+
+    private void movimentos(){
+         if(attacking){
             trail.SetActive(true);
         } else {
             trail.SetActive(false);
@@ -138,34 +179,9 @@ public class HeroiController : MonoBehaviour
 
         playerAnimator.SetBool("groundead",grounded);
         playerAnimator.SetInteger("idAnimation", idAnimation);
-       // playerAnimator.SetFloat("speedY", playerRb.velocity.y);
-    }
-
-    void flip()
-    {
-        if (!attacking)
-        {
-            lookLeft = !lookLeft;
-            float x = transform.localScale.x;
-            x *= -1;
-            transform.localScale = new Vector3(x,transform.localScale.y,transform.localScale.z);
-            dir.x = x;
-            //dir = dir;
-        }
-    }
-
-    public void atack(int atk)
-    {
-        if(atk==0 )
-        {
-            attacking = false;
-            armas[armas.Length-1].SetActive(false);
-        }else if (atk == 1)
-        {
-            attacking = true;
-        }
-    }
-
+        //print(playerRb.velocity.y);
+        playerAnimator.SetFloat("speedY", playerRb.velocity.y);
+    } 
     private void interagir()
     {
         RaycastHit2D hit = Physics2D.Raycast(hands.transform.position, dir, 5f);
@@ -178,7 +194,7 @@ public class HeroiController : MonoBehaviour
 /// <param name="other">The other Collider2D involved in this collision.</param>
 void OnTriggerEnter2D(Collider2D other)
 {
-    Debug.Log(other.gameObject.tag);
+//    Debug.Log(other.gameObject.tag);
     switch (other.gameObject.tag)
         {
             case "Bau":
@@ -197,7 +213,8 @@ void OnTriggerEnter2D(Collider2D other)
             break;
             case "Interacao":
                 interacao = null;
-                balaoAlerta.SetActive(false);
+                balaoAlerta.SetActive(true);
+                interacao = other.gameObject;
             break;
             default:
             break;
@@ -223,6 +240,7 @@ private void OnTriggerExit2D(Collider2D other) {
             case "Interacao":
                 interacao = null;
                 balaoAlerta.SetActive(false);
+                interacao = null;
             break;
             default:
             break;
@@ -279,14 +297,18 @@ private void OnTriggerExit2D(Collider2D other) {
         armas[id].SetActive(true);
     }
 
+      public void hurt(int hurt){
+        olhoAtual.GetComponent<SpriteRenderer>().sprite = olhos[hurt];
+    }
+
     void LateUpdate() {
-        if(idArma!=idArmaAtual){
-            trocarArma(idArma);
+        if(gameController.idArma != gameController.idArmaAtual){
+            trocarArma(gameController.idArma);
         }
     }
     public void trocarArma(int id) {
-        idArma = id;
-        arma.GetComponent<SpriteRenderer>().sprite = gameControler.Armas[id];
-        idArmaAtual = idArma;
+        gameController.idArma = id;
+        arma.GetComponent<SpriteRenderer>().sprite = gameController.Armas[id];
+        gameController.idArmaAtual = gameController.idArma;
     }
 }
