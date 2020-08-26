@@ -47,14 +47,14 @@ public class InimigoControler : MonoBehaviour
         sRender = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         sRender.color = characterColor[0];
-        if(olhandoEsquerda){
+      /*  if(olhandoEsquerda){
             float x = transform.localScale.x;
             x *= -1;
             transform.localScale = new Vector3(x,transform.localScale.y,transform.localScale.z);
             float x2 = barraVida.transform.localScale.x;
             x2 *= -1;
             barraVida.transform.localScale = new Vector3(x2, barraVida.transform.localScale.y, barraVida.transform.localScale.z);
-        }
+        } */
         knockbackPosition.localPosition = new Vector3(knockbackX, knockbackPosition.localPosition.y, 0);
     }
 
@@ -130,6 +130,8 @@ public class InimigoControler : MonoBehaviour
                 ///if(heroiController.)
                 Destroy(danoTemp, 1f);
                 Destroy(knockbackTemp, 0.03f);
+                // Chama o metodo do outro script
+				this.gameObject.SendMessage ("TomeiHit", SendMessageOptions.DontRequireReceiver);
                 
             }
                

@@ -38,13 +38,14 @@ public class Goblin : MonoBehaviour
 	public GameObject alertaBalao;
 	public LayerMask layerObstaculos;
 	public LayerMask layerPersonagem;
+	public LayerMask layerChao;
 	private HeroiController player;
 	public GameObject[] armas;
 	public GameObject[] arcos;
 	public GameObject[] flechas;
 	public GameObject[] staffs;
 	private GameControler gameController;
-
+public GameObject checkFimPlataform;
 	// ------------------- FUNCOES UNITY ------------------- //
 
 	private void Start () 
@@ -74,12 +75,14 @@ public class Goblin : MonoBehaviour
 
 	private void Update () 
 	{
+		Debug.DrawRay(this.transform.position, direcao * distanciaVerPersonagem , Color.red);
 		// Verificacao de observacao contra o personagem
 		if (estadoAtual != EstadoInimigo.ATAQUE && estadoAtual != EstadoInimigo.RECUAR)
 		{
 			RaycastHit2D hitPersonagem = Physics2D.Raycast (this.transform.position, direcao, distanciaVerPersonagem, layerPersonagem);
 			if (hitPersonagem)
 			{
+				//Debug.Log("Achei o PLayer");
 				MudarEstado (EstadoInimigo.ALERTA);
 			}
 		}
@@ -88,8 +91,11 @@ public class Goblin : MonoBehaviour
 		if (estadoAtual == EstadoInimigo.PATRULHA)
 		{
 			RaycastHit2D hitObstaculo = Physics2D.Raycast  (this.transform.position, direcao, distanciaMudarRota, layerObstaculos);
-			if (hitObstaculo)
+			RaycastHit2D hitplataforma = Physics2D.Raycast  (checkFimPlataform.transform.position, direcao, 0.2f, layerChao);
+			//Debug.Log(hitObstaculo);
+			if (hitObstaculo || !hitplataforma)
 			{
+				
 				MudarEstado (EstadoInimigo.PARADO);
 			}
 		}
@@ -100,6 +106,7 @@ public class Goblin : MonoBehaviour
 			RaycastHit2D hitObstaculo = Physics2D.Raycast  (this.transform.position, direcao, distanciaMudarRota, layerObstaculos);
 			if (hitObstaculo)
 			{
+				Debug.Log("FLIPPPPPPP");
 				Flip ();
 			}
 		}
@@ -112,10 +119,12 @@ public class Goblin : MonoBehaviour
 			// Define estado
 			if (distancia <= distanciaParaAtacar)
 			{
+				
 				MudarEstado (EstadoInimigo.ATAQUE);
 			}
 			else if (distancia >= distanciaSairAlerta && !estaEmAlerta)
 			{
+				//Debug.Log("vou sair do alerta");
 				MudarEstado (EstadoInimigo.PARADO);
 			}
 		}
@@ -130,8 +139,8 @@ public class Goblin : MonoBehaviour
 		rigidBody2D.velocity = new Vector2 (velocidade, rigidBody2D.velocity.y);
 
 		// Define variaveis de animator
-		animator.SetInteger ("id_animation", (velocidade == 0 ? 0 : 1));
-		animator.SetFloat ("id_classe", idClasse);
+		animator.SetInteger ("idAnimation", (velocidade == 0 ? 0 : 1));
+		//animator.SetFloat ("id_classe", idClasse);
 	}
 
 	// ------------------- FUNCOES ------------------- //
@@ -179,12 +188,13 @@ public class Goblin : MonoBehaviour
 
 			case EstadoInimigo.ATAQUE:
 			{
-				animator.SetTrigger ("attack");
+				animator.SetTrigger ("atacar");
 				break;
 			}
 
 			case EstadoInimigo.RECUAR:
 			{
+				
 				Flip ();
 				velocidade = velocidadeBase * 2;
 				StartCoroutine ("Recuar");
@@ -227,10 +237,12 @@ public class Goblin : MonoBehaviour
 	// Controla se esta atacando
     private void Attack (int atk)
     {
-		if (atk == 0)
+		//Debug.Log(atk);
+		if (atk == 0 && estaAtacando)
 		{
-			estaAtacando = false;
-			armas[2].SetActive (false);
+			//estaAtacando = false;
+//			armas[2].SetActive (false);
+Debug.Log("ATAQUEIIIIIII   1r");
 			MudarEstado (EstadoInimigo.RECUAR);
 		}
 		else if (atk == 1)
@@ -409,6 +421,7 @@ public class Goblin : MonoBehaviour
 	// Chama corrotina e muda estado
 	public void TomeiHit ()
 	{
+		Debug.Log("InimigoTomoHit");
 		estaEmAlerta = true;
 		StartCoroutine ("HitAlerta");
 		MudarEstado (EstadoInimigo.ALERTA);

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3903985670111055519}
   - component: {fileID: 3903985670111055518}
   - component: {fileID: 3903985670111055507}
-  m_Layer: 12
+  m_Layer: 9
   m_Name: pocaoDetail
   m_TagString: Coletavel
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 4000533237376516599}
   - component: {fileID: 4000533237376516598}
   - component: {fileID: 4000533237376516594}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: pocaoVida
   m_TagString: Interacao
   m_Icon: {fileID: 0}
