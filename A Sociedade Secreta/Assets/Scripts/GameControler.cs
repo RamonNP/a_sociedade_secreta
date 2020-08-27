@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public enum GameState
 {
 	DIALOGO,
-	FIM_DIALOGO,
+	FIMDIALOGO,
 	GAMEPLAY,
 	ITENS,
 	LOADGAME,
@@ -32,13 +32,16 @@ public class GameControler : MonoBehaviour
     public GameObject fxMorte;
     [Header("Banco de Dados Arma")]
     public Sprite[] Armas;
-
+	public string[] idiomaFolder;
 	private bool estaPausado;
 
     [Header ("Materiais para iluminação")]
 	public Material luz2D;
 	public Material padrao2D;
-    
+
+    public bool missao1;
+	public int idioma;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,9 +80,9 @@ void Awake()
 				break;
 			}
 
-			case GameState.FIM_DIALOGO:
+			case GameState.FIMDIALOGO:
 			{
-				StartCoroutine ("FimDaConversa");
+				StartCoroutine ("fimConversa");
 				break;
 			}
 
@@ -89,6 +92,25 @@ void Awake()
 			}
 		}
 	}
+ 	IEnumerator fimConversa()
+    {
+        yield return new WaitForEndOfFrame();
+        MudarEstado(GameState.GAMEPLAY);
+    }
+// Formata uma string com indicadores para tags
+	public string TextoFormatado (string frase)
+	{
+		string temp = frase;
 
+		// Subtitui palavras especificas
+		temp = temp.Replace ("cor=yellow", "<color=#FFFF00FF>");
+		temp = temp.Replace ("cor=red", "<color=#ff0000ff>");
+		temp = temp.Replace ("cor=orange", "<color=#ffa500ff>");
+		temp = temp.Replace ("fimnegrito", "</b>");
+		temp = temp.Replace ("negrito", "<b>");
+		temp = temp.Replace ("fimcor", "</color>");
+
+		return temp;
+	}
 
 }

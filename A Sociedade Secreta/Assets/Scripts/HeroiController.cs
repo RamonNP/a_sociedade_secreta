@@ -31,11 +31,14 @@ public class HeroiController : MonoBehaviour
     private Vector3 dir = Vector3.right;
     public GameObject hands;
     public GameObject interacao; 
+    public LayerMask interacaoMasck;
     [Header("Banco de Dados Arma")]
 
     public GameObject[] armas;
 
     public GameObject arma;
+
+    public GameObject hand;
 
     // Start is called before the first frame update
     void Start()
@@ -66,7 +69,12 @@ public class HeroiController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   if(gameController.estadoAtual == GameState.DIALOGO && Input.GetButtonDown("Fire1"))
+        {
+            playerRb.velocity = new Vector2(0, playerRb.velocity.y);
+            playerAnimator.SetInteger("idAnimation", 0);
+            interacao.SendMessage("falar", SendMessageOptions.DontRequireReceiver);
+        }
         // Cancela comandos se nao estiver no gameplay
         if (gameController.estadoAtual != GameState.GAMEPLAY)
         {
@@ -184,8 +192,19 @@ public class HeroiController : MonoBehaviour
     } 
     private void interagir()
     {
-        RaycastHit2D hit = Physics2D.Raycast(hands.transform.position, dir, 5f);
-        Debug.DrawRay(hands.transform.position, dir * 5f, Color.black);
+        Debug.DrawRay(arma.gameObject.transform.position, dir * 0.1f, Color.red);
+        RaycastHit2D hit = Physics2D.Raycast(arma.gameObject.transform.position, dir, 0.1f, interacaoMasck);
+        
+        if(hit == true)
+        {
+            interacao = hit.collider.gameObject;
+            balaoAlerta.SetActive(true);
+        }
+        else
+        {
+            interacao = null;
+            balaoAlerta.SetActive(false);
+        }
     }
 /// <summary>
 /// Sent when another object enters a trigger collider attached to this
