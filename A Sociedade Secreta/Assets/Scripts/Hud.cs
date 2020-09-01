@@ -76,5 +76,19 @@ public class Hud : MonoBehaviour
 			//audioController.sourceMusica.volume = audioController.volumeMaximoMusica;
 		}
     }
+public void verificarHudPersonagem()
+    {
+        //painelMana.SetActive(false);
+        //painelFlechas.SetActive(false);
 
+       // if (gameController.idClasse[gameController.idPersonagem] == 2)
+        {
+       //     painelMana.SetActive(true);
+        }
+     //   else if (gameController.idClasse[gameController.idPersonagem] == 1)
+        {
+     ///       icoFlechas.sprite = gameController.icoFlecha[gameController.idFlechaEquipada];
+      //      painelFlechas.SetActive(true);
+        }
+    }
 }

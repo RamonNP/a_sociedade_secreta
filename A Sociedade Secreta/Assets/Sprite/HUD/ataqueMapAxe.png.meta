@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: c7493c4ca7d8b8e4f9c5b8aa451f2097
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8645026099262547496
+    second: ataqueMapAxe_0
+  - first:
+      213: 6277974591991065327
+    second: ataqueMapAxe_1
+  - first:
+      213: -31667533148868795
+    second: ataqueMapAxe_2
+  - first:
+      213: 7110143648499277815
+    second: ataqueMapAxe_3
+  - first:
+      213: 6461585088670498471
+    second: ataqueMapAxe_4
+  - first:
+      213: -2799626292550862709
+    second: ataqueMapAxe_5
+  - first:
+      213: -5060740639472193022
+    second: ataqueMapAxe_6
+  - first:
+      213: 6166585641071849403
+    second: ataqueMapAxe_7
+  - first:
+      213: 6146639722041167069
+    second: ataqueMapAxe_8
+  - first:
+      213: -5392094401061436766
+    second: ataqueMapAxe_9
+  - first:
+      213: -5459701264164047601
+    second: ataqueMapAxe_10
+  - first:
+      213: -1541212689317122550
+    second: ataqueMapAxe_11
+  - first:
+      213: 828624771681035957
+    second: ataqueMapAxe_12
+  - first:
+      213: -805663116213346649
+    second: ataqueMapAxe_13
+  - first:
+      213: 6762619231347796150
+    second: ataqueMapAxe_14
+  - first:
+      213: -4056884187998109568
+    second: ataqueMapAxe_15
+  - first:
+      213: -6921464497499962081
+    second: ataqueMapAxe_16
+  - first:
+      213: 3500045040650680926
+    second: ataqueMapAxe_17
+  - first:
+      213: 4065985632897391256
+    second: ataqueMapAxe_18
+  - first:
+      213: 6924019757745035741
+    second: ataqueMapAxe_19
+  - first:
+      213: 41979420662128225
+    second: ataqueMapAxe_20
+  - first:
+      213: -3571825149300524877
+    second: ataqueMapAxe_21
+  - first:
+      213: 6022390536224311020
+    second: ataqueMapAxe_22
+  - first:
+      213: -3242945520047079859
+    second: ataqueMapAxe_23
+  - first:
+      213: -5024902927088092749
+    second: ataqueMapAxe_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ataqueMapAxe_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 843
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8805d571df7b9af4686dc07b66265a89
+      internalID: -8645026099262547496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 843
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b20247a312164f4da9d6f12e6be59fe
+      internalID: 6277974591991065327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 843
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6696722cf5c7ed458752759467ba53c
+      internalID: -31667533148868795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 843
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91198de219bf9ee4fad644dd1e65a8e0
+      internalID: 7110143648499277815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 843
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480b0166f2076234997ad3f16eabe21d
+      internalID: 6461585088670498471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 843
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582c5e916a867484ea2602a0f2a8f17e
+      internalID: -2799626292550862709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 843
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c2848e4499eb6419c0d1a60f810b97
+      internalID: -5060740639472193022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 843
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53caa7867e410ab4fb40e9cc2dc13ca4
+      internalID: 6166585641071849403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 662
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a5af57614ce7d488f56579d8d7ce69
+      internalID: 6146639722041167069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 662
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4050da533b67f4e94a3e84041aab58
+      internalID: -5392094401061436766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 662
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7509dc230e6a9e4887c752bba192933
+      internalID: -5459701264164047601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 662
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998ae4ee09182b842a7b778b1329d723
+      internalID: -1541212689317122550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 662
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475387f0cb62008479d47b49bf4de46e
+      internalID: 828624771681035957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 662
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fc794f25342044ca7f132cb7a4ddbf
+      internalID: -805663116213346649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_14
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 662
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db268e9322722704fb8d358b5b789764
+      internalID: 6762619231347796150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_15
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 662
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3182f0b316b6fa429c5a97d8ea88ed0
+      internalID: -4056884187998109568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 481
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0a9c1170870c24aad36a6c6e1423b8
+      internalID: -6921464497499962081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 481
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bb73fb555213d4baf2bd5a56c4a114
+      internalID: 3500045040650680926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 481
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e89a983832a7241b2dfb979227ec01
+      internalID: 4065985632897391256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 481
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33128d6fb3a0084ebfadd8041ae3b47
+      internalID: 6924019757745035741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 481
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5b2f470eecd1644864cf52d9408440
+      internalID: 41979420662128225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 481
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82969ca593b82ea4f93812f35f903306
+      internalID: -3571825149300524877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 481
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716c8cc7b4bce5344b9309e63ff66112
+      internalID: 6022390536224311020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_23
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 481
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d1e76a9f268384a9b4fe92bbe27aba
+      internalID: -3242945520047079859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueMapAxe_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e7f7429fee36e4ab8b963a93494b21
+      internalID: -5024902927088092749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 65847a690b8a3d544b6fb7b0d8ac0122
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

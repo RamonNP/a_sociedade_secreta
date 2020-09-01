@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: 6cf12e2154201df4c983498579d5f1fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4521053627851298370
+    second: Kaios_MapAtaque_0
+  - first:
+      213: 6304243099806867876
+    second: Kaios_MapAtaque_1
+  - first:
+      213: 8618086477022028358
+    second: Kaios_MapAtaque_2
+  - first:
+      213: 1336239343554959305
+    second: Kaios_MapAtaque_3
+  - first:
+      213: 7631397026151958585
+    second: Kaios_MapAtaque_4
+  - first:
+      213: -2851812339444708889
+    second: Kaios_MapAtaque_5
+  - first:
+      213: -1484698884348045931
+    second: Kaios_MapAtaque_6
+  - first:
+      213: -909703774181993425
+    second: Kaios_MapAtaque_7
+  - first:
+      213: -6645184286791973958
+    second: Kaios_MapAtaque_8
+  - first:
+      213: -7828595592855458959
+    second: Kaios_MapAtaque_9
+  - first:
+      213: -8600617636286097613
+    second: Kaios_MapAtaque_10
+  - first:
+      213: 3519040118799444673
+    second: Kaios_MapAtaque_11
+  - first:
+      213: -2247005560296131224
+    second: Kaios_MapAtaque_12
+  - first:
+      213: -8266305692898356440
+    second: Kaios_MapAtaque_13
+  - first:
+      213: -8749207016739887449
+    second: Kaios_MapAtaque_14
+  - first:
+      213: 7111712700013202676
+    second: Kaios_MapAtaque_15
+  - first:
+      213: 2306517736960315063
+    second: Kaios_MapAtaque_16
+  - first:
+      213: -8160013705823358967
+    second: Kaios_MapAtaque_17
+  - first:
+      213: -3884135888148861301
+    second: Kaios_MapAtaque_18
+  - first:
+      213: -4398460814368986210
+    second: Kaios_MapAtaque_19
+  - first:
+      213: -7654145822671241914
+    second: Kaios_MapAtaque_20
+  - first:
+      213: -7978322851463071691
+    second: Kaios_MapAtaque_21
+  - first:
+      213: -5842090711369283393
+    second: Kaios_MapAtaque_22
+  - first:
+      213: 984950444482694753
+    second: Kaios_MapAtaque_23
+  - first:
+      213: -3013634621450479428
+    second: Kaios_MapAtaque_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 794
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6613e6e88e18074290b0e53d4a563c8
+      internalID: 4521053627851298370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 794
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8707172c209254ebc8fdff0f21a129
+      internalID: 6304243099806867876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 794
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6536f8c20aace049be7f86e50218fed
+      internalID: 8618086477022028358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 794
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4549265b6b1fc5744b2b4afbd36154be
+      internalID: 1336239343554959305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 794
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997134c78c5bc284996f479851caf471
+      internalID: 7631397026151958585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 794
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7121cfa4fc9f141af8fe08e036f6c5
+      internalID: -2851812339444708889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 794
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb8eb5e49c9312499d104cae3b48de4
+      internalID: -1484698884348045931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 794
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d2b50ccfd6564e90b95952159cd56
+      internalID: -909703774181993425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 564
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41ed827cacc22f84f986f281ba4939c6
+      internalID: -6645184286791973958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 564
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a50337ad6a4aa745b2a478499b9e867
+      internalID: -7828595592855458959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 564
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d3c6fc619479540ba5b33138e1d090
+      internalID: -8600617636286097613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 564
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30faeb4a85fd674dbb32c8c6cd4738b
+      internalID: 3519040118799444673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 564
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5f112ee7277b74fa16c8a9a604627f
+      internalID: -2247005560296131224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 564
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e933a3beab290744e893566a849a3b9d
+      internalID: -8266305692898356440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_14
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 564
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15452e801e7ad0e44a5f7a6891ae5330
+      internalID: -8749207016739887449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_15
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 564
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0fd8e73765aac4694b13720e9c340d
+      internalID: 7111712700013202676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 334
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 764d68feff4325445a81bb59eb1daf39
+      internalID: 2306517736960315063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 334
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316ef9d567dbec54487e61412ddccc3e
+      internalID: -8160013705823358967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 334
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a9747de35fe954cbd5503f608b138e
+      internalID: -3884135888148861301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 334
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed57f46325e3194ea4a53f66e260557
+      internalID: -4398460814368986210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 334
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa9d8acc7b60194794afcd1020d2e8b
+      internalID: -7654145822671241914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 334
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fd2464597406c41ab8b26693049c85
+      internalID: -7978322851463071691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 334
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c26ddd3a7af3e4899558ca20ae528c
+      internalID: -5842090711369283393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_23
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 334
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e77883b878b654e8baf08332970f06
+      internalID: 984950444482694753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kaios_MapAtaque_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d35d4a1fc7e9cda4a8160f976ab1433a
+      internalID: -3013634621450479428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: cd64ccaf0b12edb4aa0d1a00a7f38468
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

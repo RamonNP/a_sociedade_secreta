@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: ed85d1c9230bf8d44a199f1cd6f02a8c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2546438068663489663
+    second: map_03_Taunt_0
+  - first:
+      213: -8354102697844000820
+    second: map_03_Taunt_1
+  - first:
+      213: -3596672074056866036
+    second: map_03_Taunt_2
+  - first:
+      213: 8032103237924590352
+    second: map_03_Taunt_3
+  - first:
+      213: -4903195731470963755
+    second: map_03_Taunt_4
+  - first:
+      213: 1900320565549610978
+    second: map_03_Taunt_5
+  - first:
+      213: -5770928887373783719
+    second: map_03_Taunt_6
+  - first:
+      213: -7272342526527811925
+    second: map_03_Taunt_7
+  - first:
+      213: 580970107129383686
+    second: map_03_Taunt_8
+  - first:
+      213: 5832391861383053752
+    second: map_03_Taunt_9
+  - first:
+      213: 5839664689100794213
+    second: map_03_Taunt_10
+  - first:
+      213: 4136239764190557771
+    second: map_03_Taunt_11
+  - first:
+      213: -6656760985975920287
+    second: map_03_Taunt_12
+  - first:
+      213: 7643480889162127985
+    second: map_03_Taunt_13
+  - first:
+      213: 6579626215439253458
+    second: map_03_Taunt_14
+  - first:
+      213: 6193467958789579542
+    second: map_03_Taunt_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: map_03_Taunt_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1142
+        width: 246
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2784c1614b93c52498501045ffba39b0
+      internalID: 2546438068663489663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1142
+        width: 245
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71059987bb8eb6440a4d05e307506025
+      internalID: -8354102697844000820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_2
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 1142
+        width: 244
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee69b758cca39fc4cb9571ad780749f0
+      internalID: -3596672074056866036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_3
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 1142
+        width: 244
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6781da895cb6031419f18f5c1e6e8d56
+      internalID: 8032103237924590352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 782
+        width: 245
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b82f6fe56acb1c4e938e94dd48a294b
+      internalID: -4903195731470963755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_5
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 781
+        width: 245
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfd249dc7db61f48a24ec428aa2ca8f
+      internalID: 1900320565549610978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_6
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 782
+        width: 246
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0dc58c8e8b63a48b07d527bcb3c39c
+      internalID: -5770928887373783719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_7
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 782
+        width: 247
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3806ad1c067973d4dbb870e797e2e566
+      internalID: -7272342526527811925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 422
+        width: 247
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007d36ece569e454784642c986ba3ce3
+      internalID: 580970107129383686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_9
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 422
+        width: 248
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e2622214cf4ff469c19064285904c8
+      internalID: 5832391861383053752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_10
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 422
+        width: 248
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc609050e83d5a4599bbd76f3b73b50
+      internalID: 5839664689100794213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_11
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 421
+        width: 248
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9817d5615a538db44bd96091d049581f
+      internalID: 4136239764190557771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 62
+        width: 248
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbceb85145718434a82440daec5a7988
+      internalID: -6656760985975920287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_13
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 62
+        width: 247
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e58244a20b7744c93ca316f795fcf1
+      internalID: 7643480889162127985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 62
+        width: 249
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8928d4a5861c64db54f5e5fc27d43c
+      internalID: 6579626215439253458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: map_03_Taunt_15
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 62
+        width: 246
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102522fa8dcf3fc4e9ad7570d77ac256
+      internalID: 6193467958789579542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ecc1450fbd2b45b4db7a5e2d67477db4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

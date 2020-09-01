@@ -30,6 +30,7 @@ void Start()
         StartCoroutine("fadeO");
     }
     IEnumerator fadeI(){
+        yield return new WaitForSeconds(0.5f);
         emTrasicao = true;
         for (float i = 0; i <= 1; i+=step)
         {
@@ -38,6 +39,7 @@ void Start()
         }
     }
     IEnumerator fadeO(){
+        //print("NEROO");
         yield return new WaitForSeconds(0.5f);
         for (float i = 0; i <= 1; i+=step)
         {

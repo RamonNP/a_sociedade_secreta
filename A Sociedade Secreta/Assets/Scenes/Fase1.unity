@@ -2026,6 +2026,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 6010912818200376728, guid: 2d5607308e460d34ab5de25e95a810ab,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6010912818200376734, guid: 2d5607308e460d34ab5de25e95a810ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2034,7 +2039,7 @@ PrefabInstance:
     - target: {fileID: 6010912818200376734, guid: 2d5607308e460d34ab5de25e95a810ab,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9930854
+      value: -3.56
       objectReference: {fileID: 0}
     - target: {fileID: 6010912818200376734, guid: 2d5607308e460d34ab5de25e95a810ab,
         type: 3}
@@ -11253,7 +11258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1220158974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12623,7 +12628,7 @@ MonoBehaviour:
   balaoAlerta: {fileID: 1478795349}
   standing: {fileID: 1411624921}
   crounching: {fileID: 1411624923}
-  hands: {fileID: 1427586578}
+  hands: {fileID: 1739317966}
   interacao: {fileID: 0}
   interacaoMasck:
     serializedVersion: 2

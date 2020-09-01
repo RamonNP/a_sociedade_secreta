@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: f96658d43d3e10143bab152296865dd1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6674044402813187284
+    second: LanceyMapLevantaMao_0
+  - first:
+      213: 2497326171487282037
+    second: LanceyMapLevantaMao_1
+  - first:
+      213: 3258513219383017143
+    second: LanceyMapLevantaMao_2
+  - first:
+      213: 595828022220280978
+    second: LanceyMapLevantaMao_3
+  - first:
+      213: -899367990049041996
+    second: LanceyMapLevantaMao_4
+  - first:
+      213: 7721466005111152089
+    second: LanceyMapLevantaMao_5
+  - first:
+      213: -5689708438864813394
+    second: LanceyMapLevantaMao_6
+  - first:
+      213: -5789759035900480625
+    second: LanceyMapLevantaMao_7
+  - first:
+      213: 4668137774594024051
+    second: LanceyMapLevantaMao_8
+  - first:
+      213: -6854928598921441940
+    second: LanceyMapLevantaMao_9
+  - first:
+      213: -5731941967921449264
+    second: LanceyMapLevantaMao_10
+  - first:
+      213: 3783585884436490924
+    second: LanceyMapLevantaMao_11
+  - first:
+      213: -8350823057883125876
+    second: LanceyMapLevantaMao_12
+  - first:
+      213: 7633991802148716817
+    second: LanceyMapLevantaMao_13
+  - first:
+      213: -3847234694593482196
+    second: LanceyMapLevantaMao_14
+  - first:
+      213: 7626853206190002896
+    second: LanceyMapLevantaMao_15
+  - first:
+      213: -6834712361522931109
+    second: LanceyMapLevantaMao_16
+  - first:
+      213: 6220338929319051280
+    second: LanceyMapLevantaMao_17
+  - first:
+      213: -1205170992922583572
+    second: LanceyMapLevantaMao_18
+  - first:
+      213: -2422112152694464135
+    second: LanceyMapLevantaMao_19
+  - first:
+      213: 8402359656368395141
+    second: LanceyMapLevantaMao_20
+  - first:
+      213: 5308497866945134228
+    second: LanceyMapLevantaMao_21
+  - first:
+      213: 3385916890785082000
+    second: LanceyMapLevantaMao_22
+  - first:
+      213: 7651123238608738908
+    second: LanceyMapLevantaMao_23
+  - first:
+      213: -3156519351819168829
+    second: LanceyMapLevantaMao_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626bdf9dac3286d46bcd7aae5177a14b
+      internalID: -6674044402813187284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7cd4f449e69c141a0dd0c7df9ebe9c
+      internalID: 2497326171487282037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb1a7f5db8ef1b458d6b0bf7383666b
+      internalID: 3258513219383017143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97e2543c98f56d42b1708d1535d18a7
+      internalID: 595828022220280978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983dc603e75508e4d97a5ae1e127d3dd
+      internalID: -899367990049041996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d70806d333cb474eb2414f541a42802
+      internalID: 7721466005111152089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d8b0aee0da7e942bc352009b884c13
+      internalID: -5689708438864813394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf892d5a2a7ff1479018aa462df2cd8
+      internalID: -5789759035900480625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec6e97c5b0e91a42af9a359785c4f8c
+      internalID: 4668137774594024051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9654bfbde94f3744daa4143e77627333
+      internalID: -6854928598921441940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803d4fca692f1da41b7885ac7fd2e86b
+      internalID: -5731941967921449264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_11
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b9a4c6925d61941a16a5472222040e
+      internalID: 3783585884436490924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a75c4f0c0336d43a2c6c1724a56283
+      internalID: -8350823057883125876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_13
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0ac0dc8146a8544a86790f27f638ac
+      internalID: 7633991802148716817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_14
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf9b4b608e3599439b8d978f36aa4f9
+      internalID: -3847234694593482196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 331
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ea83473ea894141a7bf60d8226d3b7
+      internalID: 7626853206190002896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd499a3e0139134095bddbc6269c081
+      internalID: -6834712361522931109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 150
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280d7b46bd14363448034d3117fc689e
+      internalID: 6220338929319051280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 150
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ba1820d08f06440bbb4e8d1dde0450
+      internalID: -1205170992922583572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 150
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ada606a40ad2441bddb1b38eb8477f
+      internalID: -2422112152694464135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 150
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2667f034f4696e34b82eba70c1051ca2
+      internalID: 8402359656368395141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 150
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1996161b4b1548a4bb6ac2c7fb77268e
+      internalID: 5308497866945134228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 150
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032683e4271b51548a066f044de63aa8
+      internalID: 3385916890785082000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_23
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 150
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150aefd7e48db8f4f807207152c8c60c
+      internalID: 7651123238608738908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LanceyMapLevantaMao_24
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 150
+        width: 256
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d318001cb111449aaf7ca6335b82a6
+      internalID: -3156519351819168829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 17c3155d825cf8a4d9bc9b6825844639
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

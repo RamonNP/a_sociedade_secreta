@@ -1,0 +1,723 @@
+fileFormatVersion: 2
+guid: 94faf83767c216b4a9915536b9365fd6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -788323340507454870
+    second: KayrosMapIdle_0
+  - first:
+      213: 8870667959944840698
+    second: KayrosMapIdle_1
+  - first:
+      213: -585673367363273555
+    second: KayrosMapIdle_2
+  - first:
+      213: -375048061284646841
+    second: KayrosMapIdle_3
+  - first:
+      213: 827975014406538060
+    second: KayrosMapIdle_4
+  - first:
+      213: 4021878973998876713
+    second: KayrosMapIdle_5
+  - first:
+      213: -8054802694949463060
+    second: KayrosMapIdle_6
+  - first:
+      213: 3882952671088696675
+    second: KayrosMapIdle_7
+  - first:
+      213: 7261477626069667738
+    second: KayrosMapIdle_8
+  - first:
+      213: -3457212241536970977
+    second: KayrosMapIdle_9
+  - first:
+      213: -6310707584669796020
+    second: KayrosMapIdle_10
+  - first:
+      213: 5541784370995380314
+    second: KayrosMapIdle_11
+  - first:
+      213: 6037329880601360544
+    second: KayrosMapIdle_12
+  - first:
+      213: 173180982749042401
+    second: KayrosMapIdle_13
+  - first:
+      213: 1164005093187564155
+    second: KayrosMapIdle_14
+  - first:
+      213: -2956501724403710730
+    second: KayrosMapIdle_15
+  - first:
+      213: -3659578609551584946
+    second: KayrosMapIdle_16
+  - first:
+      213: 3017994876639940492
+    second: KayrosMapIdle_17
+  - first:
+      213: -986857827187730360
+    second: KayrosMapIdle_18
+  - first:
+      213: -4397919409210878372
+    second: KayrosMapIdle_19
+  - first:
+      213: -6171711580208811225
+    second: KayrosMapIdle_20
+  - first:
+      213: 1053352309898532032
+    second: KayrosMapIdle_21
+  - first:
+      213: 63680828349472570
+    second: KayrosMapIdle_22
+  - first:
+      213: -2255716265810818855
+    second: KayrosMapIdle_23
+  - first:
+      213: -6672083454549365550
+    second: KayrosMapIdle_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KayrosMapIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821fb5a4083402645a4b0ffdb1edc05f
+      internalID: -788323340507454870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77c6c0e3c7724c41b50a6233b629600
+      internalID: 8870667959944840698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d8dfd4d2b32f354eb68c68de3cdd8b2
+      internalID: -585673367363273555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb139601be37a7642bf0d1c2dcf3ef50
+      internalID: -375048061284646841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8932fd04267104caa470900da919cd
+      internalID: 827975014406538060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b969cda06fd8e46a670415b55c49d9
+      internalID: 4021878973998876713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79507d0f384543b41947eaa0f095b1d8
+      internalID: -8054802694949463060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cac7a4e166626408282275942a185d
+      internalID: 3882952671088696675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_8
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a806cf2889c80a642bd98cf4d4136b7a
+      internalID: 7261477626069667738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_9
+      rect:
+        serializedVersion: 2
+        x: 2304
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09cf21e3cf635d46b63203742258399
+      internalID: -3457212241536970977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d9dac4ce693a741924c6003fd2e7c9
+      internalID: -6310707584669796020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_11
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332388b152e13134283fb40b1f48e448
+      internalID: 5541784370995380314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_12
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ceeced1bacb7a44a813623f723226f
+      internalID: 6037329880601360544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_13
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a798f9a5d84de9d4597832a7bd18b90b
+      internalID: 173180982749042401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_14
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9bfdaf066852c4cb8920995761be16
+      internalID: 1164005093187564155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_15
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 282
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3229e00973d70574999067a2481677d9
+      internalID: -2956501724403710730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8ac0ca410ed9b4ea84b278d32f70df
+      internalID: -3659578609551584946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 52
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4620e7f233455d40a719871f2c6024b
+      internalID: 3017994876639940492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 52
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc11a5e466c6d04ba2d6cd9f4c520f1
+      internalID: -986857827187730360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 52
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52c42f84925de843b9e312056ddd121
+      internalID: -4397919409210878372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 52
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564d177ab54bd3a459b27fa093017434
+      internalID: -6171711580208811225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 52
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6579700cdfc3d240899800c6000a593
+      internalID: 1053352309898532032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 52
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a601ec0ee0d2714ab3363087954e2a5
+      internalID: 63680828349472570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_23
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 52
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec4eb4fafac76c64c95291d1d1858681
+      internalID: -2255716265810818855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KayrosMapIdle_24
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 52
+        width: 256
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0635dfdec91844e954712e2c066d7a
+      internalID: -6672083454549365550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 803838a56bdab4341a7ac87f9d4f314c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
