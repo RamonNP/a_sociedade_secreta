@@ -258,8 +258,8 @@ class PlayerData
     public int idPersonagem;
     public int idArma;
     public int idFlechaEquipada;
-    public int[] qtdFlechas;
-    public int[] qtdPocoes;
-    public List<string> itensInventario;
+ //   public int[] qtdFlechas;
+//   public int[] qtdPocoes;
+//    public List<string> itensInventario;
     public List<int> aprimoramentoArma;
 }

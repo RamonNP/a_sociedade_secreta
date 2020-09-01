@@ -24,6 +24,7 @@ public enum ModoAnimacao
 }
 public class AnimacaoScript : MonoBehaviour
 {
+    public bool titulo;
     public List<int> inciarTeste;
     public GameObject cameraSeguir;
     public Fade fade;
@@ -38,6 +39,7 @@ public class AnimacaoScript : MonoBehaviour
     public Config[] configuracaoAnimacao;
      public Config[] configuracaoAnimacaoCena0;
      public Config[] configuracaoAnimacaoCena2;
+     public Config[] configuracaoAnimacaoCena3;
     public Config[] configuracaoEvento;
 
 
@@ -69,11 +71,14 @@ public class AnimacaoScript : MonoBehaviour
 
     void Start()
     {
-        fade = FindObjectOfType(typeof(Fade) ) as Fade;
-        canvasNPC.SetActive(false);
-        //painelResposta.SetActive(false);
-        LoadDialogoData();
-        StartCoroutine("iniciaCena0");
+        if(!titulo){
+            fade = FindObjectOfType(typeof(Fade) ) as Fade;
+            canvasNPC.SetActive(false);
+            //painelResposta.SetActive(false);
+            LoadDialogoData();
+            StartCoroutine("iniciaCena0");
+
+        }
 
     }
     /// <summary>
@@ -90,7 +95,8 @@ public class AnimacaoScript : MonoBehaviour
         switch (other.gameObject.tag)
         {
             case "Player":
-                playerAnimator.SetTrigger("atacar");
+                interacao.GetComponent<Animator>().SetTrigger("atacar");
+                //playerAnimator.SetTrigger("atacar");
             break;
             case "Coletavel":
 
@@ -174,12 +180,59 @@ public class AnimacaoScript : MonoBehaviour
 
     IEnumerator iniciaCena2() {
         idFala = 0;
-        idDialogo = 1; 
+        idDialogo = 2; 
         cameraSeguir.transform.position = new Vector3(34f, cameraSeguir.transform.position.y, cameraSeguir.transform.position.z);
-        //print("cena2");
-        //playerAnimator.SetTrigger("atacar");
-        yield return new WaitForSeconds(0.1f);
-        //print("FIM");
+        foreach (Config anim in configuracaoAnimacaoCena2)
+        {
+                if(!anim.executarComAnterior){
+                    yield return new WaitForSeconds(anim.tempoAnimacao);
+                }
+                if(anim.dialogo.Equals(ModoAnimacao.DIALOGO)) {
+                    //playerAnimator = anim.ObjetoAnimator.GetComponent<Animator>();
+                    interagir();
+                } else if (anim.dialogo.Equals(ModoAnimacao.ANIMACAO)) {
+                    rodarAnimacao(anim);
+                } else if (anim.dialogo.Equals(ModoAnimacao.MOVIMENTO)) {
+                    //moverObjeto = anim;
+                } else if(anim.dialogo.Equals(ModoAnimacao.DESATIVAR)) {
+                    anim.ObjetoAnimator.SetActive(false);
+                }
+        }
+        yield return new WaitForSeconds(2);
+        fade.fadeIn();
+        canvasNPC.SetActive(false);
+        yield return new WaitForSeconds(2);
+
+        fade.fadeIn();
+        AudioController audioC = FindObjectOfType(typeof(AudioController)) as AudioController;
+        audioC.trocarMusica(audioC.musicaFase1, "Fase1", true);
+    }
+    IEnumerator iniciaCena3() {
+        idFala = 0;
+        idDialogo = 2; 
+        cameraSeguir.transform.position = new Vector3(20.4f, cameraSeguir.transform.position.y, cameraSeguir.transform.position.z);
+        foreach (Config anim in configuracaoAnimacaoCena3)
+        {
+                if(!anim.executarComAnterior){
+                    yield return new WaitForSeconds(anim.tempoAnimacao);
+                }
+                if(anim.dialogo.Equals(ModoAnimacao.DIALOGO)) {
+                    //playerAnimator = anim.ObjetoAnimator.GetComponent<Animator>();
+                    interagir();
+                } else if (anim.dialogo.Equals(ModoAnimacao.ANIMACAO)) {
+                    rodarAnimacao(anim);
+                } else if (anim.dialogo.Equals(ModoAnimacao.MOVIMENTO)) {
+                    //moverObjeto = anim;
+                } else if(anim.dialogo.Equals(ModoAnimacao.DESATIVAR)) {
+                    anim.ObjetoAnimator.SetActive(false);
+                }
+        }
+        yield return new WaitForSeconds(2);
+        fade.fadeIn();
+        canvasNPC.SetActive(false);
+        yield return new WaitForSeconds(2);
+        fade.fadeOut();
+        StartCoroutine("iniciaCena4");
     }
 
     public void rodarAnimacao(Config anim) {
@@ -363,6 +416,7 @@ public class AnimacaoScript : MonoBehaviour
 		temp = temp.Replace ("**cor=green", "<color=#008A22>");
 		temp = temp.Replace ("**cor=red", "<color=#ff0000ff>");
 		temp = temp.Replace ("**cor=orange", "<color=#ffa500ff>");
+		temp = temp.Replace ("**cor=prata", "<color=#9F9999>");
 		temp = temp.Replace ("fimnegrito**", "</b>");
 		temp = temp.Replace ("**negrito", "<b>");
 		temp = temp.Replace ("fimcor**", "</color>");

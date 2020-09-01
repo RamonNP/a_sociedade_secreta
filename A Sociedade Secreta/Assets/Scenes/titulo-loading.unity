@@ -1146,9 +1146,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.22396946, y: -0.28126335}
+  m_Offset: {x: -0.037064075, y: -0.3399071}
   serializedVersion: 2
-  m_Radius: 1.0052328
+  m_Radius: 0.52808094
 --- !u!114 &108394697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,7 +1161,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11afb133b345745ad914c1caa86115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoAnimatorBody: {fileID: 1670009327617896}
+  titulo: 1
+  inciarTeste: 
+  cameraSeguir: {fileID: 0}
+  fade: {fileID: 0}
+  interacao: {fileID: 1670009327617896}
+  configuracaoAnimacao: []
+  configuracaoAnimacaoCena0: []
+  configuracaoAnimacaoCena2: []
+  configuracaoAnimacaoCena3: []
+  configuracaoEvento: []
+  animacao1: 0
+  valor2: 0
+  animacao2: 0
+  caixaTexto: {fileID: 0}
+  idDialogo: 0
+  canvasNPC: {fileID: 0}
+  linhasDialogo: []
+  respostaFala0: []
+  idFala: 0
+  fala0: []
+  fala1: []
+  fala2: []
+  fala3: []
+  fala4: []
+  fala5: []
+  interacaoMasck:
+    serializedVersion: 2
+    m_Bits: 0
+  idiomaFolder: []
+  nomeArquivoXml: 
 --- !u!1 &120369503
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,7 +2201,7 @@ SpriteRenderer:
   m_Size: {x: 1.11, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &271695673
@@ -3872,7 +3901,7 @@ SpriteRenderer:
   m_Size: {x: 1.11, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &407938372
@@ -5069,7 +5098,7 @@ SpriteRenderer:
   m_Size: {x: 1.11, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &563426879
@@ -9952,7 +9981,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3141911, y: -0.85067856}
+  m_Offset: {x: 0.6603947, y: -0.85067856}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9963,7 +9992,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0360847, y: 0.67281437}
+  m_Size: {x: 0.7284919, y: 0.67281437}
   m_EdgeRadius: 0
 --- !u!114 &975491677
 MonoBehaviour:
@@ -11137,7 +11166,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.2814722, y: -0.3762619}
+  m_Offset: {x: 0.695131, y: -0.3762619}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -11148,7 +11177,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.905211, y: 0.72734666}
+  m_Size: {x: 0.73252857, y: 0.72734666}
   m_EdgeRadius: 0
 --- !u!114 &1191734008
 MonoBehaviour:
@@ -11370,7 +11399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1220158974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11514,7 +11543,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.35444975, y: -0.1963104}
+  m_Offset: {x: -0.29935017, y: -0.1963104}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -11525,7 +11554,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.8615856, y: 1.0654368}
+  m_Size: {x: 0.5539858, y: 1.0654368}
   m_EdgeRadius: 0
 --- !u!114 &1233444898
 MonoBehaviour:
@@ -19138,36 +19167,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3963821301868720716}
   m_CullTransparentMesh: 0
---- !u!114 &3963821301941690328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3963821301941690334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: -8355878931891455547, guid: a41198dd03849294abb09e4bc5fc891e,
-    type: 3}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &3963821301941690329
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19186,7 +19185,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3963821301941690335}
   - component: {fileID: 3963821301941690329}
-  - component: {fileID: 3963821301941690328}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -22983,6 +22981,7 @@ GameObject:
   - component: {fileID: 3963821303275565829}
   - component: {fileID: 3963821303275565828}
   - component: {fileID: 3963821303275565835}
+  - component: {fileID: 3963821303275565836}
   m_Layer: 5
   m_Name: BtnNovoJogo
   m_TagString: Untagged
@@ -23053,19 +23052,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3963821303507266352}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: click
+      - m_Target: {fileID: 3963821303275565836}
+        m_MethodName: novaScena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23077,6 +23065,20 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &3963821303275565836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3963821303275565833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0887ef1b14da56b43a65e53338a68ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fade: {fileID: 0}
+  audioC: {fileID: 0}
 --- !u!224 &3963821303306879880
 RectTransform:
   m_ObjectHideFlags: 0
