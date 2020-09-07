@@ -25,7 +25,7 @@ TagManager:
   - coletavel
   - check
   - player
-  - 
+  - morto
   - 
   - 
   - 
@@ -54,6 +54,9 @@ TagManager:
     locked: 0
   - name: PAREDE
     uniqueID: 3539163257
+    locked: 0
+  - name: Inimigo
+    uniqueID: 2346273237
     locked: 0
   - name: Personagem
     uniqueID: 1109590075

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InimigoControler : MonoBehaviour
 {
+    private Goblin goblin;
 
     [Header("Configuraçao de Vida")]
     public int vidaInimigo;
@@ -36,14 +37,19 @@ public class InimigoControler : MonoBehaviour
     public bool getHit;// indica se tomou um Hit
     public Color[] characterColor;//controle de cor do personagem
     // Start is called before the first frame update
+
+
+    public Rigidbody2D rigidbody2D;
     void Start()
     {
         vidaAtual = vidaInimigo;
         percVida = vidaInimigo;
         hpBar.localScale = new Vector3(1,1,1);
         //barraVida.SetActive(false);
+        rigidbody2D = GetComponent<Rigidbody2D>();
         gameControler = GameControler.getInstance();
         heroiController=FindObjectOfType(typeof(HeroiController)) as HeroiController;
+        goblin=FindObjectOfType(typeof(Goblin)) as Goblin;
         sRender = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         sRender.color = characterColor[0];
@@ -109,8 +115,11 @@ public class InimigoControler : MonoBehaviour
                 } 
                 hpBar.localScale = new Vector3(percVida,1,1);
                 if(vidaAtual <= 0){
+                    goblin.estadoAtual = EstadoInimigo.MORTO;
                     died = true;
-                    animator.SetInteger("idAnimation",3);
+                    animator.SetTrigger("morreu");
+                    //animator.SetInteger("idAnimation",3);
+                    this.gameObject.layer = 15; //layer 15 estado morto não escosta em ninguem
                     StartCoroutine("loot");
                 }
                 GameObject danoTemp = Instantiate(danoTXTPrefab, transform.position, transform.localRotation);
@@ -137,6 +146,12 @@ public class InimigoControler : MonoBehaviour
                
             break;
         }
+    }
+
+    public void teste(){
+         GameObject knockbackTemp = Instantiate(knockbackForcedPrefab, knockbackPosition.position, knockbackPosition.localRotation);
+                ///if(heroiController.)
+                Destroy(knockbackTemp, 0.03f);
     }
     void Flip(){ 
         olhandoEsquerda = !olhandoEsquerda;

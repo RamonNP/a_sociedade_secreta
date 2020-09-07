@@ -6,7 +6,8 @@ public enum EstadoInimigo {
     RECUAR,
     ALERTA,
     PARADO,
-    PATRULHA
+    PATRULHA,
+	MORTO
 }
 public class Goblin : MonoBehaviour
 {
@@ -75,6 +76,13 @@ public GameObject checkFimPlataform;
 
 	private void Update () 
 	{
+
+		if(estadoAtual == EstadoInimigo.MORTO) {
+			Debug.Log("MOREUUUUU");
+			Destroy(this.gameObject);
+			//this.gameObject.layer = 13;;  //QUANDO MORRE NÂO EMPURRA O CORPO
+			return;
+		}
 		Debug.DrawRay(this.transform.position, direcao * distanciaVerPersonagem , Color.red);
 		// Verificacao de observacao contra o personagem
 		if (estadoAtual != EstadoInimigo.ATAQUE && estadoAtual != EstadoInimigo.RECUAR)
@@ -90,12 +98,12 @@ public GameObject checkFimPlataform;
 		// Verificacao de observacao contra o obstaculo enquanto patrulha
 		if (estadoAtual == EstadoInimigo.PATRULHA)
 		{
+			//Debug.DrawRay(this.transform.position, direcao * distanciaVerPersonagem , Color.red);
 			RaycastHit2D hitObstaculo = Physics2D.Raycast  (this.transform.position, direcao, distanciaMudarRota, layerObstaculos);
 			RaycastHit2D hitplataforma = Physics2D.Raycast  (checkFimPlataform.transform.position, direcao, 0.2f, layerChao);
-			//Debug.Log(hitObstaculo);
 			if (hitObstaculo || !hitplataforma)
 			{
-				
+				//Debug.Log(hitObstaculo + " - "+!hitplataforma);
 				MudarEstado (EstadoInimigo.PARADO);
 			}
 		}
@@ -189,6 +197,7 @@ public GameObject checkFimPlataform;
 			case EstadoInimigo.ATAQUE:
 			{
 				animator.SetTrigger ("atacar");
+				MudarEstado(EstadoInimigo.ALERTA);
 				break;
 			}
 

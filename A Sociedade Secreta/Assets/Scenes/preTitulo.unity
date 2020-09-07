@@ -362,7 +362,7 @@ MonoBehaviour:
   sMusic: {fileID: 1334728538}
   sFx: {fileID: 2141487246}
   musicaTitulo: {fileID: 8300000, guid: 956581afa6b536647b1720974472b01c, type: 3}
-  musicaFase1: {fileID: 8300000, guid: 92e6852f3e4838145957b1d4907f492f, type: 3}
+  musicaFase1: {fileID: 8300000, guid: a406acb05a609944e95de1a505f20ec8, type: 3}
   fxClick: {fileID: 8300000, guid: 3936a9ee459918f4dbbf7865531653b0, type: 3}
   fxSword: {fileID: 8300000, guid: 041f1084833b1b44a9e2d9fede5cea2b, type: 3}
   fxAxe: {fileID: 8300000, guid: 78e639af5625cd64cb6fb7a31eda5a8e, type: 3}
