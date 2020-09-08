@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/historiaCena1.unity
-    guid: f09e718224310bf4a9b8174c3ba2f55b
-  - enabled: 1
     path: Assets/Scenes/preTitulo.unity
     guid: a51ab4c9cedbb374aa91ebf463d9e5c5
+  - enabled: 1
+    path: Assets/Scenes/historiaCena1.unity
+    guid: f09e718224310bf4a9b8174c3ba2f55b
   - enabled: 1
     path: Assets/Scenes/titulo-loading.unity
     guid: 1e30cc83b2cc95c47b591e5005e1f1b1

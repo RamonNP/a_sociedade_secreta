@@ -21,6 +21,8 @@ public class AudioController : MonoBehaviour
     public AudioClip fxHammer;
     public AudioClip fxMace;
     public AudioClip fxStaff;
+    public AudioClip fxMagicEarth;
+    public AudioClip fxShield;
 
     // configurações dos audios
     public float volumeMaximoMusica;
@@ -79,7 +81,6 @@ public class AudioController : MonoBehaviour
 
         if(trocarCena == true)
         {
-            print(novaCena);
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(novaCena);
             while (!asyncLoad.isDone)
             {

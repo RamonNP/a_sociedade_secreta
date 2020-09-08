@@ -6,6 +6,7 @@ public class HeroiController : MonoBehaviour
 {
     private GameControler gameController;
     public GameObject trail;
+    public Joystick joystick;
 
     [Header("Animaçoes")]
     private Animator playerAnimator; 
@@ -114,8 +115,12 @@ public class HeroiController : MonoBehaviour
         } else {
             trail.SetActive(false);
         }
-        h = Input.GetAxisRaw("Horizontal");
-        v = Input.GetAxisRaw("Vertical");
+        if(joystick!=null){
+            h = joystick.Horizontal;//Input.GetAxisRaw("Horizontal");
+        } else {
+            h = Input.GetAxisRaw("Horizontal");
+        }
+        //v = joystick.Vertical;//Input.GetAxisRaw("Vertical");
         
         if (h > 0 && lookLeft == true)
         {
@@ -144,24 +149,8 @@ public class HeroiController : MonoBehaviour
 
         }
 
-        if (Input.GetButtonDown("Fire1") && v>=0 && !attacking)
-        {
-            if(interacao == null){
-                playerAnimator.SetTrigger("atacar");
-            } else if(interacao != null) {
-                if(interacao.tag.Equals("Porta")){
-                    interacao.GetComponent<Porta>().tPlayer = this.transform;
-                }
-                interacao.SendMessage("interacao",SendMessageOptions.DontRequireReceiver);
-            }
-            //interacao.SendMessage("interacao",SendMessageOptions.DontRequireReceiver);
-        }
-        if (Input.GetButtonDown("Jump") && grounded && !attacking)
-        {
-//            Debug.Log(jumpForce);
-            playerRb.AddForce(new Vector2(0, jumpForce));
-            //playerAnimator.SetTrigger("atacar");
-        }
+       
+       
 
         if (attacking && grounded)
         {
@@ -206,6 +195,28 @@ public class HeroiController : MonoBehaviour
             balaoAlerta.SetActive(false);
         }
     }
+
+    public void jump() {
+        if (grounded && !attacking)
+        {
+            playerRb.AddForce(new Vector2(0, jumpForce));
+        }
+    }
+    public void btnAtacar() {
+        if (v>=0 && !attacking)
+        {
+            if(interacao == null){
+                playerAnimator.SetTrigger("atacar");
+            } else if(interacao != null) {
+                if(interacao.tag.Equals("Porta")){
+                    interacao.GetComponent<Porta>().tPlayer = this.transform;
+                }
+                interacao.SendMessage("interacao",SendMessageOptions.DontRequireReceiver);
+            }
+            //interacao.SendMessage("interacao",SendMessageOptions.DontRequireReceiver);
+        }
+    }
+
 /// <summary>
 /// Sent when another object enters a trigger collider attached to this
 /// object (2D physics only).

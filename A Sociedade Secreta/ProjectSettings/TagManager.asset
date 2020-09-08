@@ -58,15 +58,18 @@ TagManager:
   - name: Inimigo
     uniqueID: 2346273237
     locked: 0
+  - name: plataformas_xao
+    uniqueID: 1422127871
+    locked: 0
   - name: Personagem
     uniqueID: 1109590075
-    locked: 0
-  - name: plataformas
-    uniqueID: 1422127871
     locked: 0
   - name: itens
     uniqueID: 3011883391
     locked: 0
   - name: HUD
     uniqueID: 3613148765
+    locked: 0
+  - name: plataformas_ALto
+    uniqueID: 2525384711
     locked: 0

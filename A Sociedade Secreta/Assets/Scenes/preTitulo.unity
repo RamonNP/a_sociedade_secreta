@@ -370,6 +370,8 @@ MonoBehaviour:
   fxHammer: {fileID: 8300000, guid: 3d1b66e09c3eff845bb765cbbf6d8870, type: 3}
   fxMace: {fileID: 8300000, guid: 3d1b66e09c3eff845bb765cbbf6d8870, type: 3}
   fxStaff: {fileID: 8300000, guid: 1607cf38165457545ab65a57e6e3d606, type: 3}
+  fxMagicEarth: {fileID: 8300000, guid: 04e13545bce731549bf628488356e4e6, type: 3}
+  fxShield: {fileID: 8300000, guid: 021ad94315f2102408a8833b971c8ec7, type: 3}
   volumeMaximoMusica: 0
   volumeMaximoFx: 0
 --- !u!4 &1455596706

@@ -5,11 +5,8 @@
 	<dialogo name="fala0">
 		<falas>
 		
-			<fala>"**cor=yellow Passado... fimcor**" </fala>
-			<fala>"**cor=yellow Presente... fimcor**" </fala>
-			<fala>"**cor=yellow Futuro... fimcor**" </fala>
-			<fala>"**cor=yellow Três tempos... fimcor**" </fala>
-			<fala>"**cor=yellow Mas apenas duas escolhas... fimcor**" </fala>
+			<fala>"**cor=yellow Passado... Presente... Futuro... fimcor**" </fala>
+			<fala>"**cor=yellow Três tempos... Mas apenas duas escolhas... fimcor**" </fala>
 			
 		</falas>
 	</dialogo>
@@ -17,7 +14,7 @@
 	
 	<dialogo name="fala1">
 		<falas>
-			<fala>"O jovem **cor=yellow Corey Willard fimcor** ficou órfão depois que sua mãe morreu ao lhe dar a luz..." </fala>
+			<fala>"O jovem **cor=yellow Corey Willard fimcor** ficou órfão depois que sua mãe morreu ao lhe dar à luz..." </fala>
 			<fala>"Seu pai misteriosamente desapareceu sem deixar pistas."</fala>
 			<fala>"Em um lugar desconhecido, onde nosso Heroi não sabia se estava sonhando ou se era real..." </fala>
 			<fala>"Viu um homem que aparentemente tinha a mesma idade que se pai teria atualmente e pergunta: " </fala>
@@ -36,7 +33,7 @@
 		
 			<fala>**cor=green Corey Willard: fimcor** Será que foi um sonho?</fala>
 			<fala>**cor=green Corey Willard: fimcor** Me sinto diferente.</fala>
-			<fala>**cor=green Corey Willard: fimcor** No entanto, não posso me atrasar hoje tenho que encontrar o **cor=yellow Recrutador fimcor** da **cor=yellow Sociedade Secreta fimcor**  </fala>
+			<fala>**cor=green Corey Willard: fimcor** Hoje não posso me atrasar hoje tenho que encontrar o **cor=yellow Recrutador fimcor** da **cor=yellow Sociedade Secreta fimcor**  </fala>
 		</falas>
 	</dialogo>
 	

@@ -175,6 +175,8 @@ public class AnimacaoScript : MonoBehaviour
         yield return new WaitForSeconds(2);
         fade.fadeOut();
         StartCoroutine("iniciaCena2");
+        AudioController audioC = FindObjectOfType(typeof(AudioController)) as AudioController;
+        audioC.trocarMusica(audioC.musicaTitulo, "Fase1", false);
 
     }
 

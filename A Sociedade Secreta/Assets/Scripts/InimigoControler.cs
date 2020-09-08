@@ -171,7 +171,7 @@ public class InimigoControler : MonoBehaviour
         sRender.enabled = false;
 
         // controle loot
-        int qtdMoedas = Random.Range(1,8);
+        int qtdMoedas = Random.Range(1,4);
         for (int i = 0; i < qtdMoedas; i++)
         {
             GameObject lootTemp = Instantiate(loots, transform.position, transform.localRotation);
