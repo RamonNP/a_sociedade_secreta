@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: 8c93bfa0a7cd93449803542ef830cc9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 743207876125240137
+    second: MapFarmObjetos.fw_0
+  - first:
+      213: 5933820600768612735
+    second: MapFarmObjetos.fw_1
+  - first:
+      213: 1312344616029068114
+    second: MapFarmObjetos.fw_2
+  - first:
+      213: -3941825620206564605
+    second: MapFarmObjetos.fw_3
+  - first:
+      213: 6297724545034497371
+    second: MapFarmObjetos.fw_4
+  - first:
+      213: 4383789999480474398
+    second: MapFarmObjetos.fw_5
+  - first:
+      213: 6893077415519228278
+    second: MapFarmObjetos.fw_6
+  - first:
+      213: -3833127532615819844
+    second: MapFarmObjetos.fw_7
+  - first:
+      213: 7078494390478650243
+    second: MapFarmObjetos.fw_8
+  - first:
+      213: -2878241507905118367
+    second: MapFarmObjetos.fw_9
+  - first:
+      213: 4479106636537385245
+    second: MapFarmObjetos.fw_10
+  - first:
+      213: -6421067070109965384
+    second: MapFarmObjetos.fw_11
+  - first:
+      213: 6854377354153497480
+    second: MapFarmObjetos.fw_12
+  - first:
+      213: -5629479109506518760
+    second: MapFarmObjetos.fw_13
+  - first:
+      213: -3144742342669478426
+    second: MapFarmObjetos.fw_14
+  - first:
+      213: 4798021491633885238
+    second: MapFarmObjetos.fw_15
+  - first:
+      213: -7218067548345916120
+    second: MapFarmObjetos.fw_16
+  - first:
+      213: 2413003254486553962
+    second: MapFarmObjetos.fw_17
+  - first:
+      213: -2837852844291413862
+    second: MapFarmObjetos.fw_18
+  - first:
+      213: -5534754689344770728
+    second: MapFarmObjetos.fw_19
+  - first:
+      213: 1827394292701219793
+    second: MapFarmObjetos.fw_20
+  - first:
+      213: -8565916564244475697
+    second: MapFarmObjetos.fw_21
+  - first:
+      213: 1694997985973322084
+    second: MapFarmObjetos.fw_22
+  - first:
+      213: -2829099368646985483
+    second: MapFarmObjetos.fw_23
+  - first:
+      213: -750057691439672458
+    second: MapFarmObjetos.fw_24
+  - first:
+      213: -4849587609736071973
+    second: MapFarmObjetos.fw_25
+  - first:
+      213: 5150374667470140559
+    second: MapFarmObjetos.fw_26
+  - first:
+      213: 3153001460322916064
+    second: MapFarmObjetos.fw_27
+  - first:
+      213: -4270532014214762276
+    second: MapFarmObjetos.fw_28
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 919
+        width: 86
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecdfc9fa38b0e8c4f8168f81f1586805
+      internalID: 743207876125240137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 911
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb1078e36b3aef43875e34d6ad84955
+      internalID: 5933820600768612735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_2
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 879
+        width: 130
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4050fbf0918c2174ab101d7d89973d0c
+      internalID: 1312344616029068114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_3
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 879
+        width: 154
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbcfb1600f1f514a808161891d9bd49
+      internalID: -3941825620206564605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_4
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 865
+        width: 152
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e65cbab2cd8a14e8f9bd820f102c21
+      internalID: 6297724545034497371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_5
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 879
+        width: 80
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5773b6b9c47b52c45916274a2d8b1dbd
+      internalID: 4383789999480474398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_6
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 891
+        width: 94
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb363ebd50e36748932c57ca92ff87a
+      internalID: 6893077415519228278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_7
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 879
+        width: 69
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6879f8e7f08c3438223688f3a8a1bc
+      internalID: -3833127532615819844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 779
+        width: 102
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b9aa53b92fc8943bc3cbf983d2db94
+      internalID: 7078494390478650243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 781
+        width: 100
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef11e0c9c42063444acb9a4c88fb9f2a
+      internalID: -2878241507905118367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_10
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 737
+        width: 88
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b5e456a8ae26a4bb53df8a59b5c1da
+      internalID: 4479106636537385245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 717
+        width: 154
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63cd4a762a0e314eb9ae8830e4ea58e
+      internalID: -6421067070109965384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_12
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 705
+        width: 152
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7e4edc40367d64296ac5c51a66a4ec
+      internalID: 6854377354153497480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_13
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 705
+        width: 80
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5bc1d96b139554bb33fec7315973c8
+      internalID: -5629479109506518760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_14
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 753
+        width: 102
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8a5802fe9aac340ae7ec76fefa09df
+      internalID: -3144742342669478426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_15
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 643
+        width: 92
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cb0ed53d0ad0049afa12c96ad7af70
+      internalID: 4798021491633885238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_16
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 643
+        width: 94
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ff7131ac8416d4ab7a01e354b77455
+      internalID: -7218067548345916120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_17
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 669
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f02040a82b60646a8f03c0eaf20390
+      internalID: 2413003254486553962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_18
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 529
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bef7e5783741847b60a51e5ac6c2cb
+      internalID: -2837852844291413862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_19
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 517
+        width: 116
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefd9c1874609a74787efce3979abf7b
+      internalID: -5534754689344770728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_20
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 533
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f38466e51d4cd43a45338ca9ed7df0
+      internalID: 1827394292701219793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_21
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 529
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7ed9a668589764f8b41b65914c824b
+      internalID: -8565916564244475697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_22
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 529
+        width: 84
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65327a3a5f67b7c48b325807d0a54f03
+      internalID: 1694997985973322084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_23
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 455
+        width: 128
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81dba2371e3f484cb2c64bbb4c478ef
+      internalID: -2829099368646985483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_24
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 301
+        width: 106
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebab756e3176aa245b6318b72eebc70c
+      internalID: -750057691439672458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_25
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 361
+        width: 130
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93afab7d185bf0c49841a716479086ba
+      internalID: -4849587609736071973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_26
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 327
+        width: 130
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11aad222884b8cb479ef683aa8b51031
+      internalID: 5150374667470140559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_27
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 333
+        width: 130
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5803bb515b31c954193c8313a8c1a6a2
+      internalID: 3153001460322916064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapFarmObjetos.fw_28
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 117
+        width: 126
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e72f61c02bc58d448ce23106eb350ec
+      internalID: -4270532014214762276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 36501af9177a2ef45a9477167a5b87c4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

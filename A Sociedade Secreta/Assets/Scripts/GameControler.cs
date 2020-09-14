@@ -23,16 +23,19 @@ public class GameControler : MonoBehaviour
     public GameState estadoAtual;
     private static GameControler instance;
     public int gold;
+    public int quantidadeFlechas;
     public string[] tiposDano;
 
     public GameObject[] fxDano;
      [Header("Informacoes Player")]
      public int idPersonagem;
-    private int idFlechaEquipada;
+    public int idFlechaEquipada;
     public int vidaMaxima;
     public int vidaAtual;
     public int idArma;
     public int idArmaAtual;
+    public float[] velocidadesFlecha;
+    public GameObject[] flechaPrefabs;
 
 	public ItemModelo[] armaInicialPersonagem;
     private int idArmaInicial;
@@ -51,6 +54,7 @@ public class GameControler : MonoBehaviour
 	private AudioController audioController;
     public bool missao1;
 	public int idioma;
+	public string nomeArquivoXml;
 	private Inventario inventario;
     //private object armaInicialPersonagem;
 
@@ -246,6 +250,11 @@ void Awake()
 
 		return temp;
 	}
+
+    public void morrer() {
+        string nomeCena = "fase1";
+        audioController.trocarMusica(audioController.musicaFase1, nomeCena, true);
+    }
 
 }
 

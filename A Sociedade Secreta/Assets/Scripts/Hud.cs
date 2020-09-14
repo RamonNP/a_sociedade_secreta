@@ -13,12 +13,17 @@ public class Hud : MonoBehaviour
 
     [Header ("Paineis")]
 	public GameObject painelPause;
-	public GameObject painelItens;
+	public GameObject painelChave;
+    public bool temChave;
 	public GameObject painelItemInfo;
     // Start is called before the first frame update
     void Start()
     {
         gameControler = GameControler.getInstance();
+        if(painelChave != null ){
+            temChave = false;
+            painelChave.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -90,5 +95,10 @@ public void verificarHudPersonagem()
      ///       icoFlechas.sprite = gameController.icoFlecha[gameController.idFlechaEquipada];
       //      painelFlechas.SetActive(true);
         }
+    }
+
+    public void mostrarChave() {
+        painelChave.SetActive(true);
+        temChave = true;
     }
 }

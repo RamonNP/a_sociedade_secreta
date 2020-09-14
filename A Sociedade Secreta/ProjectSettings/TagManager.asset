@@ -9,6 +9,7 @@ TagManager:
   - Coletavel
   - Interacao
   - Porta
+  - Buraco
   layers:
   - Default
   - TransparentFX
@@ -61,11 +62,11 @@ TagManager:
   - name: plataformas_xao
     uniqueID: 1422127871
     locked: 0
-  - name: Personagem
-    uniqueID: 1109590075
-    locked: 0
   - name: itens
     uniqueID: 3011883391
+    locked: 0
+  - name: Personagem
+    uniqueID: 1109590075
     locked: 0
   - name: HUD
     uniqueID: 3613148765

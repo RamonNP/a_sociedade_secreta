@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HeroiController : MonoBehaviour
 {
+    private XmlLerDados xmlLerDados;
     private GameControler gameController;
+    private AudioController audioController;
     public GameObject trail;
     public Joystick joystick;
 
@@ -18,7 +21,9 @@ public class HeroiController : MonoBehaviour
     public Rigidbody2D playerRb;
     public Sprite[] olhos;
     public GameObject olhoAtual;
-
+    public GameObject canvasConversa;
+    public Text caixaTexto;
+    private bool naoPodeAtacar;          // Indica se podemos executar um ataque
 
     public Transform groundCheck; //Responsavel por checar se o personagem esta no xao
     public bool lookLeft;
@@ -29,30 +34,40 @@ public class HeroiController : MonoBehaviour
     private float h, v;
 
     public Collider2D standing, crounching;
-    private Vector3 dir = Vector3.right;
     public GameObject hands;
     public GameObject interacao; 
     public LayerMask interacaoMasck;
+    public Vector3 dir = Vector3.right;
     [Header("Banco de Dados Arma")]
 
     public GameObject[] armas;
 
     public GameObject arma;
+    public GameObject arco;
 
     public GameObject hand;
+
+    public Transform spawnFlecha;
 
     // Start is called before the first frame update
     void Start()
     {
+        xmlLerDados = XmlLerDados.getInstance();
         trail.SetActive(false);
         balaoAlerta.SetActive(false);
         foreach (var item in armas)
         {
            item.SetActive(false);
         }
+        if(arco != null){
+            arco.SetActive(false);
+        }
         playerAnimator = objetoAnimatorBody.GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody2D>();
         gameController = GameControler.getInstance();
+        if(xmlLerDados !=null){
+            xmlLerDados.LoadDialogoData(gameController.idiomaFolder[gameController.idioma] + "/" + gameController.nomeArquivoXml); //ler o arquivo interação com itens;
+        }
         trocarArma(gameController.idArma);
     }
 
@@ -227,13 +242,6 @@ void OnTriggerEnter2D(Collider2D other)
 //    Debug.Log(other.gameObject.tag);
     switch (other.gameObject.tag)
         {
-            case "Bau":
-                interacao = other.gameObject;
-                Bau bau = other.gameObject.GetComponent<Bau>();
-                //if(!bau.open){
-                    balaoAlerta.SetActive(true);
-                //}
-            break;
             case "Coletavel":
                 other.gameObject.SendMessage("coletar", SendMessageOptions.DontRequireReceiver);
             break;
@@ -253,13 +261,6 @@ void OnTriggerEnter2D(Collider2D other)
 private void OnTriggerExit2D(Collider2D other) {
      switch (other.gameObject.tag)
         {
-            case "Bau":
-                //interacao = other.gameObject;
-               // Bau bau = other.gameObject.GetComponent<Bau>();
-                //if(!bau.open){
-                    //balaoAlerta.SetActive(true);
-                //}
-            break;
             case "Coletavel":
                 //other.gameObject.SendMessage("coletar", SendMessageOptions.DontRequireReceiver);
             break;
@@ -288,15 +289,11 @@ private void OnTriggerExit2D(Collider2D other) {
 
         switch (other.gameObject.tag)
         {
-            case "Bau":
-                interacao = other.gameObject;
-                Bau bau = other.gameObject.GetComponent<Bau>();
-               // if(!bau.open){
-                    balaoAlerta.SetActive(true);
-               // }
-            break;
             case "Coletavel":
                 Destroy(other.gameObject);
+            break;
+            case "Buraco":
+                gameController.morrer();
             break;
             case "Interacao":
                 balaoAlerta.SetActive(true);
@@ -307,12 +304,6 @@ private void OnTriggerExit2D(Collider2D other) {
         }
     }
     private void OnCollisionExit2D(Collision2D collision) {
-        //Debug.Log(collision.gameObject.name+collision.gameObject.tag);
-        if(collision.gameObject.tag == "Bau")
-        {
-            interacao = null;
-            balaoAlerta.SetActive(false);
-        }
         if(collision.gameObject.tag == "Interacao")
         {
             balaoAlerta.SetActive(false);
@@ -341,4 +332,72 @@ private void OnTriggerExit2D(Collider2D other) {
         arma.GetComponent<SpriteRenderer>().sprite = gameController.Armas[id];
         gameController.idArmaAtual = gameController.idArma;
     }
+
+    public void mostrarMensagem(object item) {
+        idMensagem = (string) item;
+        StartCoroutine("dialogar");
+    }
+
+    private string idMensagem;
+    IEnumerator dialogar() {
+        print("Chave"+idMensagem+"Tamanho - "+xmlLerDados.mensagemInteracao.Count);
+        caixaTexto.text = xmlLerDados.mensagemInteracao[idMensagem];
+        print(caixaTexto.text);
+        canvasConversa.SetActive(true);
+        yield return new WaitForSeconds(4);
+        canvasConversa.SetActive(false);
+    }
+
+    public void AttackFlecha (int atk)
+    {
+        switch (atk)
+        {
+            case 0:
+            {
+                //Debug.Log("0 - "+"EsperarNovoAtaque");
+                attacking = false;
+                //arcos[2].SetActive (false);
+                StartCoroutine ("EsperarNovoAtaque");
+                break;
+            }
+
+            case 1:
+            {
+                //Debug.Log("1 - "+"atack- true");
+                attacking = true;
+                break;
+            }
+
+            case 2:
+            {
+                // Instancia flecha
+                //if (gameController.quantidadeFlechas[gameController.idFlechaEquipada] > 0)
+                Debug.Log("1 - "+"atack- true");
+                if (gameController.quantidadeFlechas > 0)
+                {
+
+                    //audioController.TocarEfeito (audioController.efeitoArco, 1f);
+                    gameController.quantidadeFlechas--;
+                    GameObject flechaTemp = Instantiate (gameController.flechaPrefabs[gameController.idFlechaEquipada], spawnFlecha.position, spawnFlecha.localRotation);
+                    flechaTemp.transform.localScale = new Vector3 (flechaTemp.transform.localScale.x * dir.x, flechaTemp.transform.localScale.y, flechaTemp.transform.localScale.z);
+                    flechaTemp.GetComponent<Rigidbody2D>().velocity = new Vector2 (gameController.velocidadesFlecha[gameController.idFlechaEquipada] * dir.x, 0);
+                    Destroy (flechaTemp, 2f);
+                }
+
+                break;
+            }
+            
+            default:
+            {
+                break;
+            }
+        }
+    }
+
+    private IEnumerator EsperarNovoAtaque ()
+    {
+        yield return new WaitForSeconds (0.2f);
+        naoPodeAtacar = false;
+    }
+
 }

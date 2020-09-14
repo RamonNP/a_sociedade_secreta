@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<dialogos>
+
+	<dialogo name="NaoBau">
+		<falas>
+			<fala>"Você não Possue a **cor=yellow Chave fimcor**" </fala>
+		</falas>
+	</dialogo>
+	
+	
+	
+	
+</dialogos>

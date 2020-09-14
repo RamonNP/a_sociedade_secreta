@@ -5,6 +5,7 @@ using UnityEngine;
 public class InimigoControler : MonoBehaviour
 {
     private Goblin goblin;
+    public GameObject cameraShake;
 
     [Header("Configuraçao de Vida")]
     public int vidaInimigo;
@@ -39,14 +40,14 @@ public class InimigoControler : MonoBehaviour
     // Start is called before the first frame update
 
 
-    public Rigidbody2D rigidbody2D;
+    //public Rigidbody2D rigidbody2D;
     void Start()
     {
         vidaAtual = vidaInimigo;
         percVida = vidaInimigo;
         hpBar.localScale = new Vector3(1,1,1);
         //barraVida.SetActive(false);
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        //rigidbody2D = GetComponent<Rigidbody2D>();
         gameControler = GameControler.getInstance();
         heroiController=FindObjectOfType(typeof(HeroiController)) as HeroiController;
         goblin=FindObjectOfType(typeof(Goblin)) as Goblin;
@@ -94,12 +95,14 @@ public class InimigoControler : MonoBehaviour
         animator.SetBool("groundead", true);
     }
     private void OnTriggerEnter2D(Collider2D other) {
-//        Debug.Log(other.gameObject.tag);
+        Debug.Log(other.gameObject.tag);
         if(died == true){return;}
         switch (other.gameObject.tag)
         {
             case "Arma":
             if(!getHit){
+                //Debug.Log("CHAMOU INTERACAO");
+                cameraShake.SendMessage("interacao",SendMessageOptions.DontRequireReceiver);
                 getHit = true;
                 barraVida.SetActive(true);
                 ArmaInfo armaInfo = other.gameObject.GetComponent<ArmaInfo>();

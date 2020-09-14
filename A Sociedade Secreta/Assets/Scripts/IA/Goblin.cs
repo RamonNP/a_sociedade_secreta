@@ -78,7 +78,7 @@ public GameObject checkFimPlataform;
 	{
 
 		if(estadoAtual == EstadoInimigo.MORTO) {
-			Debug.Log("MOREUUUUU");
+			//Debug.Log("MOREUUUUU");
 			Destroy(this.gameObject);
 			//this.gameObject.layer = 13;;  //QUANDO MORRE NÂO EMPURRA O CORPO
 			return;
@@ -430,7 +430,7 @@ Debug.Log("ATAQUEIIIIIII   1r");
 	// Chama corrotina e muda estado
 	public void TomeiHit ()
 	{
-		Debug.Log("InimigoTomoHit");
+		//Debug.Log("InimigoTomoHit");
 		estaEmAlerta = true;
 		StartCoroutine ("HitAlerta");
 		MudarEstado (EstadoInimigo.ALERTA);

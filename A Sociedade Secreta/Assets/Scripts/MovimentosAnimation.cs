@@ -22,7 +22,12 @@ public class MovimentosAnimation : MonoBehaviour
     }
      public void hut(int hurt)
     {
-        Debug.Log("hurt - "+hurt);
+        //Debug.Log("hurt - "+hurt);
         playScript.hurt(hurt);
+    }
+     public void atackFlexa(int atck)
+    {
+        
+        playScript.AttackFlecha(atck);
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bau : MonoBehaviour
 {
+
+    private HeroiController heroiController;
     private GameControler gameControler;
     private SpriteRenderer spriteRenderer;
     public Sprite[] imagemObjeto;
@@ -12,17 +14,23 @@ public class Bau : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //gameControler = FindObjectOfType(typeof(GameControler)) as GameControler;
+        //HeroiController
+        heroiController = FindObjectOfType(typeof(HeroiController)) as HeroiController;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
    public void interacao() {
-       if(!open) {
-           open = true;
-           spriteRenderer.sprite = imagemObjeto[1];
-           StartCoroutine("gerarLoot");
-           GetComponent<Collider2D>().enabled = false;
-       }
+        Hud hud = FindObjectOfType(typeof(Hud)) as Hud;
+        if(!open) {
+            if(!hud.temChave) {
+                heroiController.SendMessage("mostrarMensagem","NaoBau",SendMessageOptions.DontRequireReceiver); //SendMessage não tiver a chave avisa o heroicontroler
+                return;
+            }
+            open = true;
+            spriteRenderer.sprite = imagemObjeto[1];
+            StartCoroutine("gerarLoot");
+            GetComponent<Collider2D>().enabled = false;
+        }
    }
 
 IEnumerator gerarLoot() {
