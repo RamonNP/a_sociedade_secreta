@@ -52,8 +52,17 @@ public class HeroiController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        xmlLerDados = XmlLerDados.getInstance();
-        trail.SetActive(false);
+        try
+        {
+            gameController = GameControler.getInstance();
+            xmlLerDados = XmlLerDados.getInstance();
+            trail.SetActive(false);
+        }
+        catch (System.Exception)
+        {
+            
+            throw;
+        }
         balaoAlerta.SetActive(false);
         foreach (var item in armas)
         {
@@ -64,7 +73,6 @@ public class HeroiController : MonoBehaviour
         }
         playerAnimator = objetoAnimatorBody.GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody2D>();
-        gameController = GameControler.getInstance();
         if(xmlLerDados !=null){
             xmlLerDados.LoadDialogoData(gameController.idiomaFolder[gameController.idioma] + "/" + gameController.nomeArquivoXml); //ler o arquivo interação com itens;
         }
@@ -217,6 +225,7 @@ public class HeroiController : MonoBehaviour
             playerRb.AddForce(new Vector2(0, jumpForce));
         }
     }
+
     public void btnAtacar() {
         if (v>=0 && !attacking)
         {
@@ -231,6 +240,14 @@ public class HeroiController : MonoBehaviour
             //interacao.SendMessage("interacao",SendMessageOptions.DontRequireReceiver);
         }
     }
+    public void btnAtacarFlexa() {
+        if (v >= 0 && !attacking)
+        {
+            if(interacao == null){
+                playerAnimator.SetTrigger("flexa");
+            }
+        }
+    }
 
 /// <summary>
 /// Sent when another object enters a trigger collider attached to this
@@ -243,7 +260,10 @@ void OnTriggerEnter2D(Collider2D other)
     switch (other.gameObject.tag)
         {
             case "Coletavel":
-                other.gameObject.SendMessage("coletar", SendMessageOptions.DontRequireReceiver);
+                other.gameObject.SendMessage("coletar", 1, SendMessageOptions.DontRequireReceiver);
+            break;
+            case "FlexaColetavel":
+                other.gameObject.SendMessage("coletar", 2, SendMessageOptions.DontRequireReceiver);
             break;
             case "Porta":
                 interacao = other.gameObject;
@@ -285,11 +305,12 @@ private void OnTriggerExit2D(Collider2D other) {
     /// <param name="other">The Collision2D data associated with this collision.</param>
     void OnCollisionEnter2D(Collision2D other)
     {
-//        Debug.Log(other.gameObject.name +other.gameObject.tag);
+        //Debug.Log(other.gameObject.tag);
 
         switch (other.gameObject.tag)
         {
-            case "Coletavel":
+            case "FlexaColetavel":
+                other.gameObject.SendMessage("coletar", 2, SendMessageOptions.DontRequireReceiver);
                 Destroy(other.gameObject);
             break;
             case "Buraco":
@@ -372,7 +393,8 @@ private void OnTriggerExit2D(Collider2D other) {
             {
                 // Instancia flecha
                 //if (gameController.quantidadeFlechas[gameController.idFlechaEquipada] > 0)
-                Debug.Log("1 - "+"atack- true");
+                //Debug.Log("1 - "+"atack- true");
+                print(gameController.quantidadeFlechas);
                 if (gameController.quantidadeFlechas > 0)
                 {
 

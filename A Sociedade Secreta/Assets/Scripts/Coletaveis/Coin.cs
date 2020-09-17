@@ -11,8 +11,16 @@ public class Coin : MonoBehaviour
     {
         gameControler = GameControler.getInstance();
     }
-    public void coletar() {
-        gameControler.gold += valor;
-        Destroy(this.gameObject);
+    public void coletar(int id) {
+
+        //Debug.Log("CHEGOU - "+id);
+        if(id == 1) { //moeda
+            gameControler.gold += valor;
+            Destroy(this.gameObject);
+        }
+        if(id == 2) { //flexa
+            gameControler.quantidadeFlechas += valor;
+            Destroy(this.gameObject);
+        }
     }
 }

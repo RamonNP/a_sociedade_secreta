@@ -10,6 +10,7 @@ public class Hud : MonoBehaviour
     public GameObject vida2;
     public GameObject vida3;
     public Text txtGold;
+    public GameObject txtQtdFLexa;
 
     [Header ("Paineis")]
 	public GameObject painelPause;
@@ -34,6 +35,9 @@ public class Hud : MonoBehaviour
         }
         controleVida();
         txtGold.text = gameControler.gold.ToString("N0").PadLeft(4,'0').Replace(",",".");
+        if(txtQtdFLexa!=null){
+            txtQtdFLexa.GetComponent<TMPro.TextMeshProUGUI>().text = gameControler.quantidadeFlechas.ToString("N0").PadLeft(3,'0').Replace(",",".");
+        }
     }
 
     private void controleVida(){

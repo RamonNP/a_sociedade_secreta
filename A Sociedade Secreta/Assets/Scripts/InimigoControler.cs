@@ -5,7 +5,7 @@ using UnityEngine;
 public class InimigoControler : MonoBehaviour
 {
     private Goblin goblin;
-    public GameObject cameraShake;
+    public CameraShake cameraShake;
 
     [Header("Configuraçao de Vida")]
     public int vidaInimigo;
@@ -20,9 +20,8 @@ public class InimigoControler : MonoBehaviour
     public float[] ajusteDano;
     public bool olhandoEsquerda, playerEsquerda;
     private GameControler gameControler;
-    private SpriteRenderer sRender;
+    //private SpriteRenderer sRender;
     [Header("Configuraçao de Knockback")]
-    //Knockback
     private HeroiController heroiController;
     public GameObject knockbackForcedPrefab;
     public Transform knockbackPosition;
@@ -34,7 +33,7 @@ public class InimigoControler : MonoBehaviour
     public Transform groundCheck;
     public LayerMask whatIsGround;
     [Header("Configuraçao de loot")]
-    public GameObject loots;
+    public GameObject[] loots;
     public bool getHit;// indica se tomou um Hit
     public Color[] characterColor;//controle de cor do personagem
     // Start is called before the first frame update
@@ -50,10 +49,16 @@ public class InimigoControler : MonoBehaviour
         //rigidbody2D = GetComponent<Rigidbody2D>();
         gameControler = GameControler.getInstance();
         heroiController=FindObjectOfType(typeof(HeroiController)) as HeroiController;
+        cameraShake = FindObjectOfType(typeof(CameraShake)) as CameraShake;
         goblin=FindObjectOfType(typeof(Goblin)) as Goblin;
-        sRender = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        sRender.color = characterColor[0];
+
+        //sRender = GetComponent<SpriteRenderer>();
+        //if(sRender == null){
+        //    sRender = new SpriteRenderer();
+        //}
+        //sRender.color = characterColor[0];
+        Util.changeColor(this.gameObject, characterColor[0]);
       /*  if(olhandoEsquerda){
             float x = transform.localScale.x;
             x *= -1;
@@ -95,7 +100,7 @@ public class InimigoControler : MonoBehaviour
         animator.SetBool("groundead", true);
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log(other.gameObject.tag);
+        //Debug.Log(other.gameObject.tag);
         if(died == true){return;}
         switch (other.gameObject.tag)
         {
@@ -171,13 +176,21 @@ public class InimigoControler : MonoBehaviour
         yield return new WaitForSeconds(2f);
         GameObject fxMorte = Instantiate(gameControler.fxMorte, groundCheck.position, transform.localRotation);
         yield return new WaitForSeconds(0.5f);
-        sRender.enabled = false;
+        //sRender.enabled = false;
+        Util.enableAndDisable(this.gameObject, false);
 
         // controle loot
         int qtdMoedas = Random.Range(1,4);
         for (int i = 0; i < qtdMoedas; i++)
         {
-            GameObject lootTemp = Instantiate(loots, transform.position, transform.localRotation);
+            GameObject lootTemp = Instantiate(loots[0], transform.position, transform.localRotation);
+            lootTemp.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-50,50), 100) );
+            yield return new WaitForSeconds(0.2f);
+        }
+        int qtdFlexas = Random.Range(0,2);
+        for (int i = 0; i < qtdMoedas; i++)
+        {
+            GameObject lootTemp = Instantiate(loots[1], transform.position, transform.localRotation);
             lootTemp.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-50,50), 100) );
             yield return new WaitForSeconds(0.2f);
         }
@@ -191,17 +204,17 @@ public class InimigoControler : MonoBehaviour
 
 
     IEnumerator invulneravel(){
-        sRender.color = characterColor[1];
+        Util.changeColor(this.gameObject, characterColor[1]);
         yield return new WaitForSeconds(0.2f);
-        sRender.color = characterColor[0];
+        Util.changeColor(this.gameObject, characterColor[0]);
         yield return new WaitForSeconds(0.2f);
-        sRender.color = characterColor[1];
+        Util.changeColor(this.gameObject, characterColor[1]);
         yield return new WaitForSeconds(0.2f);
-        sRender.color = characterColor[0];
+        Util.changeColor(this.gameObject, characterColor[0]);
         yield return new WaitForSeconds(0.2f);
-        sRender.color = characterColor[1];
+        Util.changeColor(this.gameObject, characterColor[1]);
         yield return new WaitForSeconds(0.2f);
-        sRender.color = characterColor[0];
+        Util.changeColor(this.gameObject, characterColor[0]);
         yield return new WaitForSeconds(0.2f);
         getHit = false;
         barraVida.SetActive(false);

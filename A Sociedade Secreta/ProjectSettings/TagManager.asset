@@ -10,6 +10,7 @@ TagManager:
   - Interacao
   - Porta
   - Buraco
+  - FlexaColetavel
   layers:
   - Default
   - TransparentFX

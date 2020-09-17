@@ -1,0 +1,4 @@
+Atalhos e codigo Unity
+
+painelItemInfo = GameObject.Find ("ItemInfo");
+primeiroPainelPause = GameObject.Find ("Button-Fechar-Pause").GetComponent<Button>();

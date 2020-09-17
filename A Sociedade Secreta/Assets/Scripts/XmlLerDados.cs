@@ -36,7 +36,7 @@ public class XmlLerDados : MonoBehaviour
     public void LoadDialogoData(string caminho)
     {
         //idiomaFolder[idioma] + "/" + nomeArquivoXml
-        print(caminho);
+        //print(caminho);
         TextAsset xmlData = (TextAsset)Resources.Load(caminho);
         XmlDocument XmlDocument = new XmlDocument();
         XmlDocument.LoadXml(xmlData.text);

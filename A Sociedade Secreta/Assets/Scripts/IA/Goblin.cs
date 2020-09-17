@@ -71,7 +71,8 @@ public GameObject checkFimPlataform;
 		MudarEstado (estadoInicial);
 		TrocarArma (idArma);
 		Material material = (estaNoEscuro ? gameController.luz2D : gameController.padrao2D);
-		MudarMaterial (material);
+		Util.changeMaterial(this.gameObject, material);
+		//MudarMaterial (material);
 	}
 
 	private void Update () 
@@ -123,7 +124,8 @@ public GameObject checkFimPlataform;
 		{
 			// Calcula distancia entre inimigo e player
 			float distancia = Vector3.Distance (this.transform.position, player.transform.position);
-
+			print(distancia);
+			print(distanciaParaAtacar);
 			// Define estado
 			if (distancia <= distanciaParaAtacar)
 			{

@@ -207,7 +207,7 @@ public class AnimacaoScript : MonoBehaviour
 
         fade.fadeIn();
         AudioController audioC = FindObjectOfType(typeof(AudioController)) as AudioController;
-        audioC.trocarMusica(audioC.musicaFase1, "Fase1", true);
+        audioC.trocarMusica(audioC.musicaFase1, "Load", true);
     }
     IEnumerator iniciaCena3() {
         idFala = 0;

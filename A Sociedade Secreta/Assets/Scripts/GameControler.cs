@@ -22,6 +22,7 @@ public class GameControler : MonoBehaviour
 	private Hud hud;
     public GameState estadoAtual;
     private static GameControler instance;
+    private SaveLoadExemplo saveLoad;
     public int gold;
     public int quantidadeFlechas;
     public string[] tiposDano;
@@ -66,14 +67,15 @@ public class GameControler : MonoBehaviour
 		inventario = FindObjectOfType(typeof(Inventario)) as Inventario;
         hud = FindObjectOfType(typeof(Hud)) as Hud;
         audioController = FindObjectOfType(typeof(AudioController)) as AudioController;
+        saveLoad = FindObjectOfType(typeof(SaveLoadExemplo)) as SaveLoadExemplo;
 
         //painelPause.SetActive(false);
         //painelItens.SetActive(false);
         //painelItemInfo.SetActive(false);
 
         //validarArma();
-
-        //Load("ramonTeste"); 
+        //Carregar (PlayerPrefs.GetString ("slot"));
+        Load(PlayerPrefs.GetString ("slot")); 
     }
 
     public static GameControler getInstance() {
@@ -128,13 +130,20 @@ void Awake()
 
     public void Save()
     {
-        string nomeArquivoSave = PlayerPrefs.GetString("slot");
 
-		if(nomeArquivoSave == null || nomeArquivoSave.Equals("")){
-			nomeArquivoSave = "ramonTeste";  // remover gabiarra para teste
-		}
+        //string caminho = string.Concat (Application.persistentDataPath, "/", PlayerPrefs.GetString ("slot"));
+
+		// Cria arquivo e formatter 
+		//BinaryFormatter binaryFormatter = new BinaryFormatter ();
+		//FileStream fileStream = File.Create (caminho);
+
+        string nomeArquivoSave = string.Concat (Application.persistentDataPath, "/", PlayerPrefs.GetString ("slot"));
+
+		//if(nomeArquivoSave == null || nomeArquivoSave.Equals("")){
+		//	nomeArquivoSave = "ramonTeste";  // remover gabiarra para teste
+		//}
         BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Create(Application.persistentDataPath + "/" + nomeArquivoSave);
+        FileStream file = File.Create(nomeArquivoSave);
 
         PlayerData data = new PlayerData();
         data.idioma = idioma;
@@ -199,7 +208,9 @@ void Awake()
             file.Close();
 
             MudarEstado(GameState.GAMEPLAY);
-            hud.verificarHudPersonagem();
+            if(hud != null){
+                hud.verificarHudPersonagem();
+            }
 
             string nomeCena = "fase1";
             audioController.trocarMusica(audioController.musicaFase1, nomeCena, true);
@@ -226,7 +237,9 @@ void Awake()
         //qtdPocoes[1] = 3;
 
         Save(); 
-        Load("ramonTeste");
+        MudarEstado (GameState.GAMEPLAY);
+		//hud.verificarHudPersonagem(); //sdsadsa
+        Load(PlayerPrefs.GetString ("slot"));
     }
 
     public void click()

@@ -60,7 +60,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5194006761967250413}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.505, y: -27.22, z: 0}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_Children:
@@ -221,8 +221,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a168500d4970f3e41b76ebcb511401ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidaInimigo: 100
-  vidaAtual: 100
+  cameraShake: {fileID: 0}
+  vidaInimigo: 20
+  vidaAtual: 20
   barraVida: {fileID: 5194006762467431106}
   hpBar: {fileID: 5194006762994972836}
   percVida: 0
@@ -242,7 +243,9 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  loots: {fileID: 1045285096455840439, guid: a02e53f149c36e4448090a70e520e241, type: 3}
+  loots:
+  - {fileID: 1045285096455840439, guid: a02e53f149c36e4448090a70e520e241, type: 3}
+  - {fileID: 5836642653896114076, guid: 90f7b39b63efb644fb980c63df92f00c, type: 3}
   getHit: 0
   characterColor:
   - {r: 1, g: 1, b: 1, a: 1}

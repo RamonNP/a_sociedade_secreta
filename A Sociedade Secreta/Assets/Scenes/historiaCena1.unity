@@ -267,8 +267,10 @@ MonoBehaviour:
   vida2: {fileID: 1524434620}
   vida3: {fileID: 1561228787}
   txtGold: {fileID: 1288457927}
+  txtQtdFLexa: {fileID: 0}
   painelPause: {fileID: 1325240688}
-  painelItens: {fileID: 0}
+  painelChave: {fileID: 0}
+  temChave: 0
   painelItemInfo: {fileID: 0}
 --- !u!1 &41747394
 GameObject:
@@ -5997,7 +5999,7 @@ TrailRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1109590075
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: -1
   m_Time: 0.2
   m_Parameters:
@@ -9090,7 +9092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1125843052
 Transform:
   m_ObjectHideFlags: 0
@@ -10728,6 +10730,7 @@ GameObject:
   - component: {fileID: 1411624921}
   - component: {fileID: 1411624923}
   - component: {fileID: 1411624924}
+  - component: {fileID: 1411624920}
   - component: {fileID: 1411624917}
   m_Layer: 14
   m_Name: Heroi
@@ -10813,7 +10816,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1109590075
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.46562693, g: 0.21560161, b: 0.8962264, a: 1}
@@ -10846,6 +10849,50 @@ Transform:
   m_Father: {fileID: 242816775}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1411624920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411624916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989a70b84c3d69e44a6b4510bd1d59cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trail: {fileID: 0}
+  joystick: {fileID: 0}
+  grounded: 0
+  oQueEChao:
+    serializedVersion: 2
+    m_Bits: 0
+  attacking: 0
+  idAnimation: 0
+  objetoAnimatorBody: {fileID: 0}
+  playerRb: {fileID: 0}
+  olhos: []
+  olhoAtual: {fileID: 0}
+  canvasConversa: {fileID: 0}
+  caixaTexto: {fileID: 0}
+  groundCheck: {fileID: 0}
+  lookLeft: 0
+  speed: 0
+  jumpForce: 0
+  balaoAlerta: {fileID: 0}
+  standing: {fileID: 0}
+  crounching: {fileID: 0}
+  hands: {fileID: 0}
+  interacao: {fileID: 0}
+  interacaoMasck:
+    serializedVersion: 2
+    m_Bits: 0
+  dir: {x: 1, y: 0, z: 0}
+  armas: []
+  arma: {fileID: 0}
+  arco: {fileID: 0}
+  hand: {fileID: 0}
+  spawnFlecha: {fileID: 0}
 --- !u!61 &1411624921
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12671,13 +12718,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1921590845}
   - component: {fileID: 1921590846}
+  - component: {fileID: 1921590847}
   m_Layer: 0
   m_Name: GameControler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1921590845
 Transform:
   m_ObjectHideFlags: 0
@@ -12707,6 +12755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   estadoAtual: 2
   gold: 0
+  quantidadeFlechas: 0
   tiposDano:
   - Normal
   - Fogo
@@ -12716,10 +12765,13 @@ MonoBehaviour:
   - {fileID: 7027941738567152336, guid: 01d995177df4b7f43b8c203536040895, type: 3}
   - {fileID: 7027941738567152336, guid: 01d995177df4b7f43b8c203536040895, type: 3}
   idPersonagem: 0
+  idFlechaEquipada: 0
   vidaMaxima: 3
   vidaAtual: 1
   idArma: 6
   idArmaAtual: 6
+  velocidadesFlecha: []
+  flechaPrefabs: []
   armaInicialPersonagem: []
   nomePersonagem: []
   spriteSheet: []
@@ -12739,6 +12791,19 @@ MonoBehaviour:
   padrao2D: {fileID: 2100000, guid: 9304509ea7f89814fad43a16778f820d, type: 2}
   missao1: 0
   idioma: 0
+  nomeArquivoXml: 
+--- !u!114 &1921590847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921590844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df699309856f1044b0af41fb9047402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1927921394
 GameObject:
   m_ObjectHideFlags: 0
